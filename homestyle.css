@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*TODO: Media Queries, but add the base classes/IDs from the divs for now...*/
+
+
+/* ID Styles for the Home Page */
+#banner-wrapper{
+    width:  960px;
+    height: 120px;
+
+    margin-top:   5px;
+    margin-left:  5px;
+    margin:       auto;
+
+    background-color: beige;
+}
+
+#banner-wrapper img{
+    width:  100px;
+    height: 100px;
+    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Class Styles for the Home Page */
+.header-text header{
+    float: right;
+    margin-right:  140px;
+}
+
+.nav-section nav .box{
+    width:  175px;
+    height: 15px;
+
+    margin-top: 10px;
+
+    padding-left:   20px;
+    padding-top:    10px;
+    padding-bottom: 15px;
+    padding-right:  10px;
+    float:          right;
+
+    background-color: turquoise;
+    transition: 0.35s ease;
+}
+
+/* ONLY FOR COMPUTERS */
+.nav-section nav .box:hover{
+    background-color: white;
+    opacity: 1;
+}
+
+.clear{
+    clear:both
+}

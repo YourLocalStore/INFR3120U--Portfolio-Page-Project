@@ -13,7 +13,7 @@
         Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
         This is to group information together into their corresponding, related area.
     -->
-  <div id="homepage-wrapper">
+  <div id="contactpage-wrapper">
     <div id="banner-wrapper">
       <div class="header-text">
         <header>
@@ -54,29 +54,43 @@
 
     <div class="clear"></div>
     <div id="form-wrapper">
-      <h1>Any Inquiries or Feedback?</h1>
+
+      <header><h1>Any Inquiries or Feedback?</h1></header>
+      <p>Your comments are greatly appreciated!</p>
+
       <form action="mailto:joshua.tuibuen@ontariotechu.net" method="post" enctype="text/plain" name="form">
+        
+        <div class="form-field">
+          <p>
+            <label for="Fname">First Name: </label>
+            <input type="text" , name="Fname" , size="70" , required, placeholder="Enter your First Name">
+          </p>
+        </div>
+      
+        <div class="form-field">
+          <p>
+            <label for="Lname">Last Name: </label>
+            <input type="text" , name="Lname" , size="70" , required, placeholder="Enter your Last Name">
+          </p>
+        </div>
     
-        <p>
-          <label for="Fname">First Name: </label>
-          <input type="text" , name="Fname" , size="32" , required, placeholder="Enter your First Name">
-        </p>
+        <div class="form-field"> 
+          <p>
+            <label for="email">Email: </label>
+            <input type="email" , name="email" , size="70" , required, placeholder="Enter your Email Address">
+          </p>
+        </div>
     
-        <p>
-          <label for="Lname">Last Name: </label>
-          <input type="text" , name="Lname" , size="32" , required, placeholder="Enter your Last Name">
-        </p>
-    
-        <p>
-          <label for="email">Email: </label>
-          <input type="email" , name="email" , size="32" , required, placeholder="Enter your Email Address">
-        </p>
-    
-        <p>
-          <label for="Comments">Comments: </label>
-          <br>
-          <textarea name="Comments" cols="60" rows="6"></textarea>
-        </p>
+        <div class="form-field"> 
+          <p>
+            <label for="Comments">Comments: </label>
+            <br>
+            <textarea name="Comments" cols="70" rows="10", required, placeholder="Questions, feedback, comments..."></textarea>
+          </p>
+        </div>
+
+        <input type="submit" value="Submit the Form">
+
       </form>
     </div>
   </div>

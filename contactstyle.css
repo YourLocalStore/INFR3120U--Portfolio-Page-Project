@@ -6,7 +6,7 @@ body{
     background-image: linear-gradient(to bottom, black, white 200%);
 }
 /* Styles for the Home Page Banner Section*/
-#homepage-wrapper{
+#contactpage-wrapper{
     width:  960px;
     height: 1024px;
 
@@ -43,7 +43,7 @@ body{
     margin-right:  140px;
 }
 
-#homepage-wrapper .nav-section .box{
+#contactpage-wrapper .nav-section .box{
     text-align: center;
 
     width:  150px;
@@ -65,7 +65,7 @@ body{
     font-size:  24px
 }
 
-#homepage-wrapper .box-filler{
+#contactpage-wrapper .box-filler{
     width:   75px;
     height: 75px;
     
@@ -104,14 +104,37 @@ body{
 }
 
 /* ONLY FOR COMPUTERS */
-#homepage-wrapper .nav-section .box:hover {
+#contactpage-wrapper .nav-section .box:hover {
     background-color: white;
 }
 
 /* Styles for the Contact Page Form Section*/
 #form-wrapper{
+    width: 960px;
+    height:500px;
+
     float:left;
+    text-align: center;
 }
+
+#form-wrapper .form-field label{
+    font-size: 20px;
+    display:block;
+    padding:10px;
+
+    text-align:left;
+    margin-left: 230px;
+}
+
+#form-wrapper .form-field textarea{
+    min-width:  500px;
+    max-height: 250px;
+    max-width:  500px;
+
+    margin-top:-10px;
+
+}
+
 
 .clear{
     clear:both

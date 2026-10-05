@@ -170,6 +170,8 @@ img{
 
 #body-wrapper #img-projects-wrapper figcaption{
     position: bottom;
+    text-align: center;
+    margin-right:10px;
 }
 
 #body-wrapper #about-img-wrapper img{

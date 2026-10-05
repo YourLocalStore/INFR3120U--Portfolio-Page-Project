@@ -1,17 +1,73 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="projectstyle.css">
+    <title>INFR3120 Portfolio Page</title>
 </head>
-<body>
 
-    <header>
-        <p>
-            <h1>This is the Project Page.</h1>
-        </p>
-    </header>
+<body>
+    <!-- 
+        Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
+        This is to group information together into their corresponding, related area.
+    -->
+    <div id="homepage-wrapper">
+        <div id="banner-wrapper">
+            <div class="header-text">
+                <header>
+                    <h1>[name] — Student of Networking and IT Security </h1>
+                    <p>Placeholder Text Here!</p>
+                </header>
+            </div>
+            <div class="clear"></div>
+
+            <img src="pcat.png">
+
+            <!--TODO: Float this navbar left, across from the title header of this page.-->
+            <div class="clear"></div>
+            <div class="nav-section">
+                <!--Create a navigation bar with all navigation options-->
+                <nav>
+                    <div class="box">
+                        <a href="contactpage.html">Contact</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="aboutpage.html">About</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="projectpage.html">Projects</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="homepage.html">Home</a>
+                    </div>
+
+                    <div class="box-filler"></div>
+                    <div class="clear"></div>
+                </nav>
+            </div>
+        </div> <!-- END OF BANNER WRAPPER-->
+
+        <div class="clear"></div>
+    </div>
+
+        <!--This serves as the header for the home page.-->
+    <div id="footer-wrapper">
+        <footer>
+            <nav>
+                <h4>
+                    <a href="homepage.html">Home</a>
+                    <a href="projectpage.html">Projects</a>
+                    <a href="aboutpage.html">About</a>
+                    <a href="contactpage.html">Contact Me!</a>
+                </h4>
+            </nav>
+        </footer>
+    </div>
     
 </body>
 </html>

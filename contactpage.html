@@ -1,40 +1,99 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Form</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="contactstyle.css">
+  <title>INFR3120 Portfolio Page</title>
 </head>
+
 <body>
-    <div id="wrapper">
-        <h1>Any Inquiries or Feedback?</h1>
-        <form action  ="mailto:joshua.tuibuen@ontariotechu.net" method ="post"
-              enctype ="text/plain"                             name   ="form">
+  <!-- 
+        Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
+        This is to group information together into their corresponding, related area.
+    -->
+  <div id="homepage-wrapper">
+    <div id="banner-wrapper">
+      <div class="header-text">
+        <header>
+          <h1>[name] — Student of Networking and IT Security </h1>
+          <p>Placeholder Text Here!</p>
+        </header>
+      </div>
+      <div class="clear"></div>
 
-              <p>
-                <label for="Fname">First Name: </label>
-                <input type="text", name="Fname", 
-                       size="32", required, 
-                       placeholder="Enter your First Name">
-              </p>
+      <img src="pcat.png">
 
-              <p>
-                <label for="Lname">Last Name: </label>
-                <input type="text", name="Lname", 
-                       size="32", required, 
-                       placeholder="Enter your Last Name">
-              </p>
+      <!--TODO: Float this navbar left, across from the title header of this page.-->
+      <div class="clear"></div>
+      <div class="nav-section">
+        <!--Create a navigation bar with all navigation options-->
+        <nav>
+          <div class="box">
+            <a href="contactpage.html">Contact</a>
+          </div>
 
-              <p>
-                <label for="email">Email: </label>
-                <input type="email", name="email", 
-                       size="32", required, 
-                       placeholder="Enter your Email Address">
-              </p>
+          <div class="box">
+            <a href="aboutpage.html">About</a>
+          </div>
 
-              <p>
-                <label for="Comments">Comments: </label>
-                <br>
-                <textarea name="Comments" cols="60" rows="6"></textarea>
-              </p>
+          <div class="box">
+            <a href="projectpage.html">Projects</a>
+          </div>
+
+          <div class="box">
+            <a href="homepage.html">Home</a>
+          </div>
+
+          <div class="box-filler"></div>
+          <div class="clear"></div>
+        </nav>
+      </div>
+    </div> <!-- END OF BANNER WRAPPER-->
+
+    <div class="clear"></div>
+    <div id="form-wrapper">
+      <h1>Any Inquiries or Feedback?</h1>
+      <form action="mailto:joshua.tuibuen@ontariotechu.net" method="post" enctype="text/plain" name="form">
+    
+        <p>
+          <label for="Fname">First Name: </label>
+          <input type="text" , name="Fname" , size="32" , required, placeholder="Enter your First Name">
+        </p>
+    
+        <p>
+          <label for="Lname">Last Name: </label>
+          <input type="text" , name="Lname" , size="32" , required, placeholder="Enter your Last Name">
+        </p>
+    
+        <p>
+          <label for="email">Email: </label>
+          <input type="email" , name="email" , size="32" , required, placeholder="Enter your Email Address">
+        </p>
+    
+        <p>
+          <label for="Comments">Comments: </label>
+          <br>
+          <textarea name="Comments" cols="60" rows="6"></textarea>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+  <!--This serves as the header for the home page.-->
+  <div id="footer-wrapper">
+    <footer>
+      <nav>
+        <h4>
+          <a href="homepage.html">Home</a>
+          <a href="projectpage.html">Projects</a>
+          <a href="aboutpage.html">About</a>
+          <a href="contactpage.html">Contact Me!</a>
+        </h4>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>

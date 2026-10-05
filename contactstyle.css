@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*TODO: Media Queries, but add the base classes/IDs from the divs for now...*/
+
+body{
+    background-image: linear-gradient(to bottom, black, white 200%);
+}
+/* Styles for the Home Page Banner Section*/
+#homepage-wrapper{
+    width:  960px;
+    height: 1024px;
+
+    margin: auto;
+
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+#banner-wrapper{
+    width:  960px;
+    height: 120px;
+
+    margin-top:   5px;
+    margin-left:  5px;
+    margin:       auto;
+
+    border-bottom:    1px solid black;
+    background-color: beige;
+}
+
+#banner-wrapper img{
+    width:  100px;
+    height: 100px;
+    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
+
+    margin-top:  -100px;
+    margin-left: 20px;
+}
+
+/* Class Styles for the Home Page */
+.header-text header{
+    float: right;
+    margin-right:  140px;
+}
+
+#homepage-wrapper .nav-section .box{
+    text-align: center;
+
+    width:  150px;
+    height: 15px;
+
+    margin-top:   10px;
+    margin-right:  5px;
+
+    padding-left:   18px;
+    padding-top:     0px;
+    padding-bottom: 15px;
+    padding-right:  35px;
+    float:          right;
+
+    background-color: turquoise;
+    border: 1px solid black;
+
+    transition: 0.35s ease;
+    font-size:  24px
+}
+
+#homepage-wrapper .box-filler{
+    width:   75px;
+    height: 75px;
+    
+    margin-top:  10px;
+    margin-left:  5px;
+
+    padding-left:   20px;
+    padding-top:     0px;
+    padding-bottom: 15px;
+    padding-right:  12px;
+    float:          left;
+
+    background-color: turquoise;
+    border: 1px solid black;
+}
+
+
+#footer-wrapper footer{
+    width:  960px; 
+    height: 60px;
+
+    margin-top: 5px;
+    margin: auto;
+
+    background: beige;
+    border: 1px solid black;
+    
+}
+
+#footer-wrapper h2{
+    margin-left: 5px;
+}
+
+#footer-wrapper nav{
+    text-align: center;
+}
+
+/* ONLY FOR COMPUTERS */
+.nav-section nav .box:hover{
+    background-color: white;
+    opacity: 1;
+}
+
+/* Styles for the Contact Page Form Section*/
+#form-wrapper{
+    float:left;
+}
+
+.clear{
+    clear:both
+}

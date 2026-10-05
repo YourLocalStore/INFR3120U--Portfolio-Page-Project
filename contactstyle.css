@@ -5,6 +5,9 @@
 body{
     background-image: linear-gradient(to bottom, black, white 200%);
 }
+img{
+    object-fit: contain;
+}
 /* Styles for the Home Page Banner Section*/
 #contactpage-wrapper{
     width:  960px;

@@ -10,7 +10,7 @@ img{
     object-fit: contain;
 }
 /* Styles for the Home Page Banner Section*/
-#homepage-wrapper{
+#page-wrapper{
     width:  100%;
     min-height: 1024px;
 
@@ -46,7 +46,7 @@ img{
     text-align: center;
 }
 
-#homepage-wrapper .nav-section .box{
+#page-wrapper .nav-section .box{
     text-align: center;
 
     width:  40%;
@@ -68,7 +68,7 @@ img{
     font-size:  24px;
 }
 
-#homepage-wrapper .box-filler{
+#page-wrapper .box-filler{
     display: none;
 }
 

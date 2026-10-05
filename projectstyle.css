@@ -7,7 +7,7 @@ img{
     object-fit: contain;
 }
 /* Styles for the Home Page Banner Section*/
-#projectpage-wrapper{
+#page-wrapper{
     width:  960px;
     height: 1024px;
 
@@ -44,7 +44,7 @@ img{
     margin-right:  140px;
 }
 
-#projectpage-wrapper .nav-section .box{
+#page-wrapper .nav-section .box{
     text-align: center;
 
     width:  150px;
@@ -66,7 +66,7 @@ img{
     font-size:  24px
 }
 
-#projectpage-wrapper .box-filler{
+#page-wrapper .box-filler{
     width:   75px;
     height: 75px;
     
@@ -84,11 +84,11 @@ img{
 }
 
 /* ONLY FOR COMPUTERS */
-#projectpage-wrapper .nav-section .box:hover {
+#page-wrapper .nav-section .box:hover {
     background-color: white;
 }
 
-#projectpage-wrapper .project-img-box img{
+#page-wrapper .project-img-box img{
     width:240px;
     height:170px;
 
@@ -99,7 +99,7 @@ img{
     border: 1px solid black;
 }
 
-#projectpage-wrapper .project-article-wrapper article h2{
+#page-wrapper .project-article-wrapper article h2{
     position:absolute;
     float:left;
 
@@ -114,7 +114,7 @@ img{
     background-color: white;
 }
 
-#projectpage-wrapper .project-article-wrapper article p{
+#page-wrapper .project-article-wrapper article p{
     position:absolute;
     float:left;
 

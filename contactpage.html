@@ -2,16 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
+    <div id="wrapper">
+        <h1>Any Inquiries or Feedback?</h1>
+        <form action  ="mailto:joshua.tuibuen@ontariotechu.net" method ="post"
+              enctype ="text/plain"                             name   ="form">
 
-    <header>
-        <p>
-            <h1>This is the Contact Page.</h1>
-        </p>
-    </header>
-    
+              <p>
+                <label for="Fname">First Name: </label>
+                <input type="text", name="Fname", 
+                       size="32", required, 
+                       placeholder="Enter your First Name">
+              </p>
+
+              <p>
+                <label for="Lname">Last Name: </label>
+                <input type="text", name="Lname", 
+                       size="32", required, 
+                       placeholder="Enter your Last Name">
+              </p>
+
+              <p>
+                <label for="email">Email: </label>
+                <input type="email", name="email", 
+                       size="32", required, 
+                       placeholder="Enter your Email Address">
+              </p>
+
+              <p>
+                <label for="Comments">Comments: </label>
+                <br>
+                <textarea name="Comments" cols="60" rows="6"></textarea>
+              </p>
 </body>
 </html>

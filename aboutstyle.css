@@ -1,15 +1,12 @@
 @charset "UTF-8";
 
-/*TODO: Media Queries, but add the base classes/IDs from the divs for now...*/
-
-
 body{
     background-image: linear-gradient(to bottom, black, white 200%);
 }
 /* Styles for the Home Page Banner Section*/
 #homepage-wrapper{
     width:  960px;
-    height: 1024px;
+    height: 940px;
 
     margin: auto;
 
@@ -83,33 +80,13 @@ body{
     border: 1px solid black;
 }
 
-#footer-wrapper footer{
-    width:  960px; 
-    height: 60px;
-
-    margin-top: 5px;
-    margin: auto;
-
-    background: beige;
-    border: 1px solid black;
-    
-}
-
-#footer-wrapper h2{
-    margin-left: 5px;
-}
-
-#footer-wrapper nav{
-    text-align: center;
-}
-
 /* ONLY FOR COMPUTERS */
 .nav-section nav .box:hover{
     background-color: white;
     opacity: 1;
 }
 
-/* Styles for the Home Page Body Section*/
+
 #body-wrapper header{
     text-align: center;
 
@@ -121,18 +98,6 @@ body{
     background-color:white;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-}
-
-#about-page-image{
-    height: 200px;
-    margin-top:10px;
-    background-color:white;
-}
-
-#about-page-image img{
-    width:  960px;
-    height: 200px;
-    background-color:white;
 }
 
 #body-wrapper header h1{
@@ -148,35 +113,48 @@ body{
     margin-left: 10px;
 }
 
-#body-wrapper #img-figure-wrapper-body figure{
-    width:  300px;
-    height: 100px;
+#body-wrapper #body-wrapper-images img{
+    width:300px;
+    height:200px;
 
-    margin:       3px;
-    padding-left: 11px;
-    float:left;
+    margin-right: 15px;
+    margin-top:   10px;
 
+    float:right;
     background-color: white;
     border: 1px solid black;
 }
 
 #body-wrapper figure video{
-    width:  330px;
-    height: 175px;
-    margin-top: -150px;
-    float: right;
+    width:  935px;
+    height: 370px;
+
+    float:left;
+    margin-left: -30px;
 
     background-color: white;
     border: 1px solid black;
 }
 
-#body-wrapper #img-figure-wrapper-body figure img{
-    width: 310px;
-    height: 70px;
+#footer-wrapper footer{
+    width:  960px; 
+    height: 60px;
+
+    margin-top: 5px;
+    margin: auto;
+
+    background: beige;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
 }
 
-#body-wrapper #img-figure-wrapper-body figcaption{
-    position: bottom;
+#footer-wrapper h2{
+    margin-left: 5px;
+}
+
+#footer-wrapper nav{
+    text-align: center;
 }
 
 .clear{

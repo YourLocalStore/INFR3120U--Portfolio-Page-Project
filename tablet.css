@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/*TODO: Media Queries, but add the base classes/IDs from the divs for now...*/
-
 body{
     background-image: linear-gradient(to bottom, black, white 200%);
 }
@@ -123,12 +121,11 @@ img{
 }
 
 #body-wrapper #img-projects-wrapper figure img{
-    width: 100%px;
+    width: 100%;
     height: 70px;
 }
 
 #body-wrapper #img-projects-wrapper figcaption{
-    position: bottom;
     text-align: center;
     margin-right:10px;
 }

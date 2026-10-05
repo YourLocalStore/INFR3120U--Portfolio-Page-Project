@@ -32,9 +32,10 @@ img{
     background-color: beige;
 }
 
-#banner-wrapper img{
-    width:  100px;
+#banner-wrapper .header-image img{
+    width:  -10%;
     height: 100px;
+    float:left;
     position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
 
     margin-top: -100px;

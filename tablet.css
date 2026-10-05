@@ -1,1 +1,194 @@
 @charset "UTF-8";
+
+/*TODO: Media Queries, but add the base classes/IDs from the divs for now...*/
+
+body{
+    background-image: linear-gradient(to bottom, black, white 200%);
+}
+
+img{
+    object-fit: contain;
+}
+/* Styles for the Home Page Banner Section*/
+#homepage-wrapper{
+    width:  100%;
+    min-height: 1024px;
+
+    margin: auto;
+
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+#banner-wrapper{
+    width:  100%;
+    height: 120px;
+
+    margin-top:   5px;
+    margin-left:  5px;
+    margin:       auto;
+
+    border-bottom:    1px solid black;
+    background-color: beige;
+}
+
+#banner-wrapper .header-image img{
+    width:  15%;
+    height: 100px;
+    float:left;
+
+    margin-top: -100px;
+    margin-left: 20px;
+    pointer-events: none;
+}
+
+/* Class Styles for the Home Page */
+.header-text header{
+    float: right;
+}
+
+#homepage-wrapper .nav-section .box{
+    text-align: center;
+
+    width:  65%;
+    height: 15px;
+
+    margin-top:   10px;
+    margin-right:  5px;
+
+    padding-left:   18px;
+    padding-top:     0px;
+    padding-bottom: 15px;
+    padding-right:  35px;
+    float:          right;
+
+    background-color: turquoise;
+    border: 1px solid black;
+    font-size:  24px;
+}
+
+#homepage-wrapper .box-filler{
+    width:  15%;
+    height: 75px;
+    
+    margin-top:  10px;
+    margin-left:  5px;
+
+    padding-left:   20px;
+    padding-top:     0px;
+    padding-bottom: 15px;
+    padding-right:  12px;
+    float:          left;
+
+    background-color: turquoise;
+    border: 1px solid black;
+}
+
+/* Styles for the Home Page Body Section*/
+#body-wrapper header{
+    text-align: center;
+
+    width:100%;
+    height:40px;
+
+    margin-top:10px;
+
+    background-color:white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#about-page-image{
+    height: 200px;
+    margin-top:10px;
+    background-color:white;
+}
+
+#about-page-image img{
+    width:  100%;
+    height: 200px;
+    background-color:white;
+}
+
+#body-wrapper header h1{
+    margin: 0px;
+}
+
+#body-wrapper article section p{
+    margin-left: 10px;
+    font-size:   20px;
+}
+
+#body-wrapper article section h2{
+    margin-left: 10px;
+}
+
+#body-wrapper #img-projects-wrapper figure{
+    width:  95%;
+    height: 100px;
+
+    margin:       3px;
+    padding-left: 11px;
+    float:left;
+
+    background-color: white;
+    border: 1px solid black;
+}
+
+#body-wrapper #img-projects-wrapper figure img{
+    width: 310px;
+    height: 70px;
+}
+
+#body-wrapper #img-projects-wrapper figcaption{
+    position: bottom;
+    text-align: center;
+    margin-right:10px;
+}
+
+#body-wrapper #about-img-wrapper img{
+    width: 33%;
+    height: 200px;
+
+    margin-top: -120px;
+    margin-right: 40px;
+
+    background-color: white;
+    float:right;
+}
+
+#footer-wrapper footer{
+    width:  100%; 
+    height: 60px;
+
+    margin-top: 5px;
+    margin: auto;
+
+    background: beige;
+    border: 1px solid black;
+    
+}
+
+#footer-wrapper h2{
+    margin-left: 5px;
+}
+
+#footer-wrapper .copyright{
+    font-size: 20px;
+    position:absolute;
+
+    margin-left: 10px;
+    float:left;
+}
+
+#footer-wrapper .footer-nav{
+    position:relative;
+    float:right;
+    margin-right: 15px;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.clear{
+    clear:both
+}

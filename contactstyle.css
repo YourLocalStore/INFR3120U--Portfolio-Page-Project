@@ -104,9 +104,8 @@ body{
 }
 
 /* ONLY FOR COMPUTERS */
-.nav-section nav .box:hover{
+#homepage-wrapper .nav-section .box:hover {
     background-color: white;
-    opacity: 1;
 }
 
 /* Styles for the Contact Page Form Section*/

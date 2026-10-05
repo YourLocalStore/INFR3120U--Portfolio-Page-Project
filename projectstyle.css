@@ -83,25 +83,6 @@ img{
     border: 1px solid black;
 }
 
-#footer-wrapper footer{
-    width:  960px; 
-    height: 60px;
-
-    margin-top: 5px;
-    margin: auto;
-
-    background: beige;
-    border: 1px solid black;
-}
-
-#footer-wrapper h2{
-    margin-left: 5px;
-}
-
-#footer-wrapper nav{
-    text-align: center;
-}
-
 /* ONLY FOR COMPUTERS */
 #projectpage-wrapper .nav-section .box:hover {
     background-color: white;
@@ -141,6 +122,39 @@ img{
 
     margin-top: -125px;
     margin-left: 285px;
+}
+
+#footer-wrapper footer{
+    width:  960px; 
+    height: 60px;
+
+    margin-top: 5px;
+    margin: auto;
+
+    background: beige;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
+
+#footer-wrapper h2{
+    margin-left: 5px;
+}
+
+#footer-wrapper .copyright{
+    font-size: 20px;
+    position:absolute;
+
+    margin-left: 10px;
+    float:left;
+}
+
+#footer-wrapper .footer-nav{
+    position:relative;
+    float:right;
+    margin-right: 15px;
+    margin-top: -10px;
+    font-size: 20px;
 }
 
 .clear{

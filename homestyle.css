@@ -12,7 +12,7 @@ img{
 /* Styles for the Home Page Banner Section*/
 #homepage-wrapper{
     width:  960px;
-    height: 1024px;
+    min-height: 1024px;
 
     margin: auto;
 
@@ -108,8 +108,20 @@ img{
     margin-left: 5px;
 }
 
-#footer-wrapper nav{
-    text-align: center;
+#footer-wrapper .copyright{
+    font-size: 20px;
+    position:absolute;
+
+    margin-left: 10px;
+    float:left;
+}
+
+#footer-wrapper .footer-nav{
+    position:relative;
+    float:right;
+    margin-right: 15px;
+    margin-top: -10px;
+    font-size: 20px;
 }
 
 /* Styles for the Home Page Body Section*/

@@ -9,63 +9,156 @@
 
 <body>  
     <!-- 
-        Each significant section (banner, body, footer) are divided into separate parts as a wrapper.
+        Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
         This is to group information together into their corresponding, related area.
     -->
-    <div id="banner-wrapper">
+    <div id="homepage-wrapper">
+        <div id="banner-wrapper">
+            <div class="header-text">
+                <header>
+                    <h1>[name] — Student of Networking and IT Security </h1>
+                    <p>Placeholder Text Here!</p>
+                </header>
+            </div>
+            <div class="clear"></div>
 
-        <div class="header-text">
-            <header>
-                <h1>[name] — Student of Networking and IT Security </h1>
-                <p>Placeholder Text Here!</p>
-            </header>
-        </div>
+            <img src="pcat.png">
 
+            <!--TODO: Float this navbar left, across from the title header of this page.-->
+            <div class="clear"></div>
+            <div class="nav-section">
+                <!--Create a navigation bar with all navigation options-->
+                <nav>
+                    <div class="box">
+                        <a href="contactpage.html">Contact</a>
+                    </div>
+                    
+                    <div class="box">
+                        <a href="blogspage.html">Blogs</a>
+                    </div>
+                    
+                    <div class="box">
+                        <a href="projectpage.html">Projects</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="homepage.html">Home</a>
+                    </div>
+
+                    <div class="box-filler"></div>
+                    <div class="clear"></div>
+                </nav>
+ 
+            </div> 
+        </div>     <!-- END OF BANNER WRAPPER-->
+
+        <!--This serves as the header for the home page.-->
         <div class="clear"></div>
-        <img src="pcat.png">
+        <div id="body-wrapper">
+
+            <header><h1>About Me!</h1></header>
+
+            <article>
+                <section>
+                    <h2>Introducing...</h2>
+                    <p>
+                        Joshua!
+
+                        I am a second-year student at Ontario Tech University, <br>
+                        studying Networking and IT Security. I am looking towards <br>
+                        becoming a Systems Administrator or Network Engineer in the future.
+                    </p>
+
+                </section>
+
+                <section>
+                    <p>
+                        Here's a short introduction video about myself!
+                    </p>
+                </section>
+            </article>
+
+            <header><h1>My Projects!</h1></header>
+
+            <article>
+                <section>
+                    <h2>Wondering what I've made?</h2>
+                    <p>
+                        Here are examples of the various projects I've worked on in past semesters.
+                    </p>
+                    
+
+                    <div id="figure-wrapper-body">
+                        <figure>
+                            <img>
+                            <figcaption>Placeholder #1</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img>
+                            <figcaption>Placeholder #2</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img>
+                            <figcaption>Placeholder #3</figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="clear"></div>
+
+                </section>
+
+                <section>
+                    <p>
+                        To learn more about my projects, <a href="projectpage.html"><mark>click here</mark></a>!
+                    </p>
+                </section>
+            </article>
+
+            <header><h1>Read My Blogs!</h1></header>
+
+            <article>
+                <section>
+                    <h2>Wondering what's on my mind?</h2>
+                    <p>
+                        Here's a couple of blogs, written exclusively by me, covering all sorts of topics.
+                    </p>
+
+                </section>
+
+                <section>
+                    <p>
+                        To read more about my blogs,  <a href="blogspage.html"><mark>click here</mark></a>!
+                    </p>
+                </section>
+            </article>
+
+        </div> <!-- END OF BODY WRAPPER-->
+
+        <!-- We need to clear the floats in order for the footer to
+            align with the page correctly. 
+
+            Otherwise, it inherits the last float value.
+        -->
         <div class="clear"></div>
 
-        <!--TODO: Float this navbar left, across from the title header of this page.-->
-        <div class="nav-section">
-            <!--Create a navigation bar with all navigation options-->
-            <nav>
-                <div class="box">
-                    <a href="contactpage.html">Contact</a>
-                </div>
-                
-                <div class="box">
-                    <a href="blogspage.html">Blogs</a>
-                </div>
-                
-                <div class="box">
-                    <a href="projectpage.html">Projects</a>
-                </div>
-
-                <div class="box">
-                    <a href="homepage.html">Home</a>
-                </div>
-            </nav>
-
-        </div>
-    </div>
-
-    <!--This serves as the header for the home page.-->
-    <div id="body-wrapper">
-
-    </div>
+    </div> <!-- END OF HOMEPAGE WRAPPER-->
 
     <!--This serves as the header for the home page.-->
     <div id="footer-wrapper">
         <footer>
-
+            <nav>
+                <h4>
+                    <a href="homepage.html">Home</a>
+                    <a href="projectpage.html">Projects</a>
+                    <a href="blogspage.html">Blogs</a>
+                    <a href="contactpage.html">Contact Me!</a>
+                </h4>
+            </nav>
         </footer>
-        
     </div>
 
 </body>
-
-
-
-
 
 </html>

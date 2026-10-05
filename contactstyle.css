@@ -9,7 +9,7 @@ img{
     object-fit: contain;
 }
 /* Styles for the Home Page Banner Section*/
-#contactpage-wrapper{
+#page-wrapper{
     width:  960px;
     height: 1024px;
 
@@ -46,7 +46,7 @@ img{
     margin-right:  140px;
 }
 
-#contactpage-wrapper .nav-section .box{
+#page-wrapper .nav-section .box{
     text-align: center;
 
     width:  150px;
@@ -68,7 +68,7 @@ img{
     font-size:  24px
 }
 
-#contactpage-wrapper .box-filler{
+#page-wrapper .box-filler{
     width:   75px;
     height: 75px;
     
@@ -86,7 +86,7 @@ img{
 }
 
 /* ONLY FOR COMPUTERS */
-#contactpage-wrapper .nav-section .box:hover {
+#page-wrapper .nav-section .box:hover {
     background-color: white;
 }
 

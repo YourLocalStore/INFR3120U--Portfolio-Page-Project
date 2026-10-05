@@ -7,7 +7,7 @@ img{
     object-fit: contain;
 }
 /* Styles for the Home Page Banner Section*/
-#homepage-wrapper{
+#page-wrapper{
     width:  960px;
     height: 940px;
 
@@ -44,7 +44,7 @@ img{
     margin-right:  140px;
 }
 
-#homepage-wrapper .nav-section .box{
+#page-wrapper .nav-section .box{
     text-align: center;
 
     width:  150px;
@@ -66,7 +66,7 @@ img{
     font-size:  24px
 }
 
-#homepage-wrapper .box-filler{
+#page-wrapper .box-filler{
     width:   75px;
     height: 75px;
     
@@ -84,7 +84,7 @@ img{
 }
 
 /* ONLY FOR COMPUTERS */
-#homepage-wrapper .nav-section .box:hover {
+#page-wrapper .nav-section .box:hover {
     background-color: white;
 }
 

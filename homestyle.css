@@ -35,7 +35,7 @@ img{
 #banner-wrapper .header-image img{
     width:  -10%;
     height: 100px;
-    float:left;
+    float: left;
     position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
 
     margin-top: -100px;
@@ -58,11 +58,12 @@ img{
     margin-top:   10px;
     margin-right:  5px;
 
+    float:right;
+
     padding-left:   18px;
     padding-top:     0px;
     padding-bottom: 15px;
     padding-right:  35px;
-    float:          right;
 
     background-color: turquoise;
     border: 1px solid black;
@@ -73,7 +74,7 @@ img{
 
 #homepage-wrapper .box-filler{
     width:   75px;
-    height: 75px;
+    height:  75px;
     
     margin-top:  10px;
     margin-left:  5px;
@@ -102,7 +103,6 @@ img{
 
     background: beige;
     border: 1px solid black;
-    
 }
 
 #footer-wrapper h2{

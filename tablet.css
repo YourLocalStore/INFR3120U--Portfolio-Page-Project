@@ -9,7 +9,9 @@ img{
     object-fit: contain;
 }
 
-/* Styles for the Home Page Banner Section*/
+/* 
+    Styles for the Home Page
+*/
 #page-wrapper{
     width:  100%;
     min-height: 1024px;
@@ -208,6 +210,43 @@ img{
 
 #footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
     color: #2E3E50
+}
+
+/* 
+    These are the styles to be used for the 'Projects' page.
+    Anything called in here will not otherwise be called in other HTML pages,
+    as long as they are named correctly and according to the page. 
+*/
+
+#page-wrapper .project-img-box img{
+    width:95%;
+    height:150px;
+
+    margin-left: 20px;
+
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
+}
+
+#page-wrapper .project-article-wrapper article h2{
+    width: 95%;
+    text-align: center;
+    margin-left: 20px;
+
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
+}
+
+#page-wrapper .project-article-wrapper article p{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+
+    /* have to explain where this one comes from
+    not in course notes */
+    text-wrap: pretty; 
+
+    color: #E0E0E0
 }
 
 .clear{

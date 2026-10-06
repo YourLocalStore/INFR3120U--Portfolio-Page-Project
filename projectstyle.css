@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
 body{
-    background-image: linear-gradient(to bottom, black, white 200%);
+    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
 img{
     object-fit: contain;
 }
 /* Styles for the Home Page Banner Section*/
 #page-wrapper{
     width:  960px;
-    height: 1024px;
+    min-height: 1024px;
 
     margin: auto;
 
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: #2E3E50;
+    border: 1px solid #E0E0E0;
 }
 
 #banner-wrapper{
@@ -26,8 +27,8 @@ img{
     margin-left:  5px;
     margin:       auto;
 
-    border-bottom:    1px solid black;
-    background-color: beige;
+    border-bottom:    1px solid #E0E0E0;
+    background-color: #E0E0E0;
 }
 
 #banner-wrapper img{
@@ -39,10 +40,36 @@ img{
     margin-left: 20px;
 }
 
-/* Class Styles for the Home Page */
-.header-text header{
+#banner-wrapper .header-text header{
+    width:880px;
+    margin-right: 0px;
     float: right;
-    margin-right:  20px;
+
+    color:#E0E0E0;
+    background-color: #2E3E50
+}
+
+#banner-wrapper .header-text header h1{
+    margin-left: 70px;
+}
+
+#banner-wrapper .header-text header p{
+    margin-left: 70px;
+}
+
+#banner-wrapper .header-image img{
+    width:  100px;
+    height: 100px;
+    float: left;
+    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
+
+    margin-top: -105px;
+    margin-left: 20px;
+
+    background-color: #2E3E50;
+    border: 1px solid #E0E0E0;
+    
+    border-radius: 50%;
 }
 
 #page-wrapper .nav-section .box{
@@ -61,11 +88,24 @@ img{
     padding-bottom: 15px;
     padding-right:  35px;
 
-    background-color: turquoise;
-    border: 1px solid black;
+    background-color: #D94A64;
+    border: 1px solid #E0E0E0;
 
     transition: 0.35s ease;
     font-size:  24px;
+}
+
+/* ONLY FOR COMPUTERS */
+#page-wrapper .nav-section .box:hover {
+    background-color: #2E3E50;
+}
+
+#page-wrapper .nav-section .box a:link{
+    color:#E0E0E0
+}
+
+#page-wrapper .nav-section .box a:visited{
+    color:#E0E0E0
 }
 
 #page-wrapper .box-filler{
@@ -81,23 +121,38 @@ img{
     padding-right:  12px;
     float:          left;
 
-    background-color: turquoise;
-    border: 1px solid black;
+    background-color: #D94A64;
+    border: 1px solid #E0E0E0;
 }
 
 #page-wrapper .box-filler img{
     position:absolute;
 
     width: 90px;
-
-    margin-top:   -5px;
     margin-left: -20px;
+    margin-top:0px;
     float:left;
+    overflow:hidden;
 }
 
-/* ONLY FOR COMPUTERS */
-#page-wrapper .nav-section .box:hover {
-    background-color: white;
+#page-indicator-box{
+    position: relative;
+    
+    width:853px;
+    height:48px;
+
+    margin-top: -50px;
+    margin-right: 5px;
+    background-color: #D94A64;
+    border: 1px solid #E0E0E0;
+    float:right
+}
+
+#page-indicator-box h2{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    color:#E0E0E0
 }
 
 #page-wrapper .project-img-box img{
@@ -105,25 +160,21 @@ img{
     height:170px;
 
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
 
-    background-color: white;
-    border: 1px solid black;
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
 }
 
 #page-wrapper .project-article-wrapper article h2{
     position:absolute;
     float:left;
 
-    /* left: 370px;
-    bottom: 196px; */
-
-    margin-top: -178px;
     margin-left: 275px;
     padding:3px;
 
-    border: 1px solid black;
-    background-color: white;
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
 }
 
 #page-wrapper .project-article-wrapper article p{
@@ -132,8 +183,10 @@ img{
 
     font-size: 20px;
 
-    margin-top: -125px;
+    margin-top:65px;
     margin-left: 285px;
+
+    color: #E0E0E0
 }
 
 #footer-wrapper footer{
@@ -143,10 +196,8 @@ img{
     margin-top: 5px;
     margin: auto;
 
-    background: beige;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    
+    background: #E0E0E0;
+    border: 1px solid #E0E0E0
 }
 
 #footer-wrapper h2{
@@ -158,7 +209,12 @@ img{
     position:absolute;
 
     margin-left: 10px;
+    margin-top: -15px;
     float:left;
+}
+
+#footer-wrapper .copyright h6 p{
+    color:#2E3E50
 }
 
 #footer-wrapper .footer-nav{
@@ -167,6 +223,10 @@ img{
     margin-right: 15px;
     margin-top: -10px;
     font-size: 20px;
+}
+
+#footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
+    color: #2E3E50
 }
 
 .clear{

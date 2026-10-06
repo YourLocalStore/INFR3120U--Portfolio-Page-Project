@@ -9,7 +9,9 @@ img{
     object-fit: contain;
 }
 
-/* Styles for the Home Page Banner Section*/
+/* 
+    Styles for the Home Page
+*/
 #page-wrapper{
     width:  100%;
     min-height: 1024px;
@@ -35,20 +37,19 @@ img{
 #banner-wrapper .header-text header{
     width: 100%;
     margin-right: 0px;
-    float: left;
+    float: right;
+    text-align: center;
 
     color:#E0E0E0;
     background-color: #2E3E50
 }
 
 #banner-wrapper .header-text header h1{
-    float: left;
-    margin-left: 70px;
+    margin-left: 0px;
 }
 
 #banner-wrapper .header-text header p{
-    float: left;
-    margin-left: 70px;
+    margin-left: 0px;
 }
 
 #banner-wrapper .header-image img{
@@ -58,19 +59,18 @@ img{
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  50%;
+    width:  21%;
     height: 25px;
 
     margin-top:   10px;
-    margin-right:  5px;
-    margin-left: 50px;
+    margin-right:  7px;
 
-    float: left;
+    float:right;
 
-    padding-left:   18px;
+    padding-left:   135px;
     padding-top:     0px;
     padding-bottom: 15px;
-    padding-right:  35px;
+    padding-right:  135px;
 
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
@@ -155,16 +155,16 @@ img{
 
 #body-wrapper #img-projects-wrapper figure img{
     width: 100%;
+
+    margin-top:20px;
     height: 70px;
 
-    margin-top: 20px;
     color:#E0E0E0
 }
 
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
-    color:#E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -201,6 +201,43 @@ img{
 
 #footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
     color: #2E3E50
+}
+
+/* 
+    These are the styles to be used for the 'Projects' page.
+    Anything called in here will not otherwise be called in other HTML pages,
+    as long as they are named correctly and according to the page. 
+*/
+
+#page-wrapper .project-img-box img{
+    width:95%;
+    height:150px;
+
+    margin-left: 10px;
+
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
+}
+
+#page-wrapper .project-article-wrapper article h2{
+    width: 95%;
+    text-align: center;
+    margin-left: 10px;
+
+    background-color: #2B7DA4;
+    border: 1px solid #E0E0E0;
+}
+
+#page-wrapper .project-article-wrapper article p{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+
+    /* have to explain where this one comes from
+    not in course notes */
+    text-wrap: pretty; 
+
+    color: #E0E0E0
 }
 
 .clear{

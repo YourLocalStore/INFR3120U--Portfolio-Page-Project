@@ -17,6 +17,17 @@ img{
     text-align: center;
 }
 
+#form-container{
+    width: 550px;
+    height: 600px;
+
+    margin-left: 200px;
+    border: 1px solid #E0E0E0;
+    background-color: #2B7DA4;
+
+    border-radius: 2%
+}
+
 #form-wrapper header{
     text-align: center;
 
@@ -26,9 +37,10 @@ img{
     margin-top:10px;
     margin-bottom: 50px;
 
-    background-color:white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    color: #E0E0E0;
+    background-color: #2B7DA4;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
 }
 
 #form-wrapper header h1{
@@ -38,16 +50,24 @@ img{
 #form-wrapper .form-field label{
     font-size: 20px;
     display:block;
+
+    margin-left: 0px;
     padding:10px;
 
-    text-align:left;
-    margin-left: 220px;
+    text-align:center;
+    color: #e0e0e0
+}
+
+#form-wrapper .form-field label{
+    size: 60;
 }
 
 #form-wrapper .form-field textarea{
-    min-width:  510px;
-    max-height: 250px;
-    max-width:  510px;
+    min-width:  520px;
+    max-width:  520px;
+
+    min-height: 50px;
+    max-height: 200px;
 
     margin-top:-10px;
 }
@@ -56,6 +76,5 @@ img{
     width: 200px;
     height:35px;
     float:right;
-    margin-right: 225px;
-
+    margin-right: 12px;
 }

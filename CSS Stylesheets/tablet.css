@@ -11,6 +11,8 @@ img{
 
 /* 
     Styles for the Home Page
+    Anything called in here will not otherwise be called in other HTML pages,
+    as long as they are named correctly and according to the page. 
 */
 #page-wrapper{
     width:  100%;
@@ -35,42 +37,55 @@ img{
 }
 
 #banner-wrapper .header-text header{
-    width: 100%;
+    width: 91%;
     margin-right: 0px;
     float: right;
-    text-align: center;
+    text-align: right;
 
     color:#E0E0E0;
     background-color: #2E3E50
 }
 
 #banner-wrapper .header-text header h1{
-    margin-left: 0px;
+    margin-right: 10px;
+    margin-left: 70px;
 }
 
 #banner-wrapper .header-text header p{
-    margin-left: 0px;
+    margin-right: 10px;
+    margin-left: 70px;
 }
 
 #banner-wrapper .header-image img{
-    display: none;
+    width:  100px;
+    height: 100px;
+    float: none;
+    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
+
+    margin-top: -120px;
+    margin-left: 10px;
+
+    background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #2E3E50 50%, #E0E0E0 50%);
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  21%;
+    width:  95%;
     height: 25px;
 
     margin-top:   10px;
-    margin-right:  7px;
+    margin-right: 20px;
 
     float:right;
 
-    padding-left:   135px;
+    padding-left:   0px;
     padding-top:     0px;
     padding-bottom: 15px;
-    padding-right:  135px;
 
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
@@ -142,7 +157,7 @@ img{
 }
 
 #body-wrapper #img-projects-wrapper figure{
-    width:  95%;
+    width:  45%;
     height: 125px;
 
     margin:       3px;
@@ -155,8 +170,6 @@ img{
 
 #body-wrapper #img-projects-wrapper figure img{
     width: 100%;
-
-    margin-top:20px;
     height: 70px;
 
     color:#E0E0E0
@@ -165,7 +178,7 @@ img{
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
-    color: #E0E0E0
+    color:#E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -206,15 +219,13 @@ img{
 
 /* 
     These are the styles to be used for the 'Projects' page.
-    Anything called in here will not otherwise be called in other HTML pages,
-    as long as they are named correctly and according to the page. 
 */
 
 #page-wrapper .project-img-box img{
     width:95%;
     height:150px;
 
-    margin-left: 10px;
+    margin-left: 20px;
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
@@ -223,7 +234,7 @@ img{
 #page-wrapper .project-article-wrapper article h2{
     width: 95%;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 20px;
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
@@ -232,14 +243,13 @@ img{
 }
 
 #page-wrapper .project-article-wrapper article p{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
 
     /* have to explain where this one comes from
     not in course notes */
     text-wrap: pretty; 
-
     color: #E0E0E0
 }
 
@@ -267,15 +277,86 @@ img{
 }
 
 #aboutme-body-wrapper figure video{
-    width:  22rem;
-    height: 17rem;
+    /* 
+        Video is quite large dimensionally, so it might be better to scale it down using rem,
+        as it will also scale down with the text 
+    */
+    width:  100%;
+    height: 420px;
 
     float:left;
-    margin-left: -30px;
+    margin-left:   0px;
     margin-top:    0px;
 
     background-color: white;
     border: 1px solid black;
+}
+
+/* 
+    These are the styles to be used for the 'Contact' page.
+*/
+
+#form-wrapper{
+    width:   100%;
+    height: 500px;
+    text-align: center;
+}
+
+#form-container{
+    width:  100%;
+    height: 600px;
+
+    margin-top: -35px;
+
+    border: 1px solid #E0E0E0;
+    background-color: #2B7DA4;
+}
+
+#form-wrapper header{
+    text-align: center;
+
+    width:  100%;
+    height: 85px;
+
+    margin-top:10px;
+    margin-bottom: 50px;
+
+    color: #E0E0E0;
+    background-color: #2B7DA4;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#form-wrapper header h1, #form-wrapper header p{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+#form-wrapper .form-field label{
+    font-size: 20px;
+    display:block;
+
+    margin-left: 0px;
+    padding:10px;
+
+    text-align:center;
+    color: #e0e0e0
+}
+
+#form-wrapper .form-field textarea{
+    min-width:  550px;
+    max-width:  550px;
+
+    min-height: 50px;
+    max-height: 150px;
+
+    margin-top:-10px;
+}
+
+#form-wrapper #submit-button input{
+    width: 40%;
+    height:35px;
+    margin-left: 250px;
 }
 
 .clear{

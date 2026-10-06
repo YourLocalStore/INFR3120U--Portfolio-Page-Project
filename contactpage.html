@@ -2,12 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="contactstyle.css">
-  <title>INFR3120 Portfolio Page - CONTACT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Computers or any device >= 960px in viewport width 
+         The maximum width is either 960px or above
+    -->
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="contactstyle.css"
+          media="only screen and (min-width:960px)"> 
+
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="homestyle.css"
+          media="only screen and (min-width:960px)"> 
+        
+    <!-- Tablets or any device > 480px and < 960px in viewport width 
+         The maximum width is 959px
+    -->
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="tablet.css"
+          media="only screen and (min-width:480px) and (max-width: 960px)">
+
+    <!-- Computers or any device < 480px in viewport width 
+         The maximum width is 479px
+    -->
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="smartphone.css"
+          media="only screen and (max-width:480px)"> 
+     
+    <title>INFR3120 Portfolio Page - CONTACT</title>
 </head>
 
-<body>
+<body>  
   <!-- 
         Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
         This is to group information together into their corresponding, related area.
@@ -16,13 +46,15 @@
     <div id="banner-wrapper">
       <div class="header-text">
         <header>
-          <h1>[name] — Student of Networking and IT Security </h1>
-          <p>Placeholder Text Here!</p>
+          <h1>Joshua — Networking and IT Security Student</h1>
+          <p>Nice to Meet You!</p>
         </header>
       </div>
       <div class="clear"></div>
 
-      <img src="pcat.png">
+      <div class="header-image">
+          <img src="pcat.png" alt="An image of a plush cat as a placeholder.">
+      </div>
 
       <!--TODO: Float this navbar left, across from the title header of this page.-->
       <div class="clear"></div>
@@ -51,6 +83,15 @@
           <div class="clear"></div>
         </nav>
       </div>
+
+      <div id="page-indicator-box">
+          <header>
+              <h2>
+                  Welcome! — Home Page
+              </h2>
+          </header>
+      </div>
+
     </div> <!-- END OF BANNER WRAPPER-->
 
     <div class="clear"></div>
@@ -101,24 +142,26 @@
   </div>
 
   <div class="clear"></div>
-  <!--This serves as the header for the home page.-->
   <div id="footer-wrapper">
     <footer>
-      <div class="copyright">
-        <p>
-            © 2026, Joshua Tuibuen
-        </p>
-      </div>
-        
       <div class="footer-nav">
         <nav>
           <h4>
-              <a href="homepage.html">Home</a>
-              <a href="projectpage.html">Projects</a>
-              <a href="aboutpage.html">About</a>
-              <a href="contactpage.html">Contact</a>
+            <a href="homepage.html">Home</a>
+            <a href="projectpage.html">Projects</a>
+            <a href="aboutpage.html">About</a>
+            <a href="contactpage.html">Contact</a>
           </h4>
         </nav>
+      </div>
+
+      <div class="copyright">
+        <h6>
+          <p>
+            © 2026, Joshua Tuibuen <br>
+            joshua.tuibuen@ontariotechu.net
+          </p>
+        </h6>
       </div>
     </footer>
   </div>

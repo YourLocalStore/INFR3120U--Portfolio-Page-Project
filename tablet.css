@@ -11,6 +11,8 @@ img{
 
 /* 
     Styles for the Home Page
+    Anything called in here will not otherwise be called in other HTML pages,
+    as long as they are named correctly and according to the page. 
 */
 #page-wrapper{
     width:  100%;
@@ -174,6 +176,7 @@ img{
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
+    color:#E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -214,8 +217,6 @@ img{
 
 /* 
     These are the styles to be used for the 'Projects' page.
-    Anything called in here will not otherwise be called in other HTML pages,
-    as long as they are named correctly and according to the page. 
 */
 
 #page-wrapper .project-img-box img{
@@ -235,6 +236,8 @@ img{
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
+
+    color: #E0E0E0
 }
 
 #page-wrapper .project-article-wrapper article p{
@@ -245,8 +248,46 @@ img{
     /* have to explain where this one comes from
     not in course notes */
     text-wrap: pretty; 
-
     color: #E0E0E0
+}
+
+/* 
+    These are the styles to be used for the 'About' page.
+*/
+
+#aboutme-body-wrapper article section p{
+    margin-left: 10px;
+    font-size:   20px;
+    color:#E0E0E0
+}
+
+#aboutme-body-wrapper article section header{
+    background-color: #2B7DA4
+}
+
+#aboutme-body-wrapper article section h1{
+    margin-left: 10px;
+    color:#E0E0E0
+}
+
+#aboutme-body-wrapper #body-wrapper-images img{
+    display: none;
+}
+
+#aboutme-body-wrapper figure video{
+    /* 
+        Video is quite large dimensionally, so it might be better to scale it down using rem,
+        as it will also scale down with the text 
+    */
+    width:  100%;
+    height: 420px;
+
+    float:left;
+    margin-left:   0px;
+    margin-top:    0px;
+
+    background-color: white;
+    border: 1px solid black;
 }
 
 .clear{

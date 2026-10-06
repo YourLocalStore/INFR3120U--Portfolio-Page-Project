@@ -165,6 +165,7 @@ img{
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
+    color: #E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -226,6 +227,8 @@ img{
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
+
+    color: #E0E0E0
 }
 
 #page-wrapper .project-article-wrapper article p{
@@ -238,6 +241,41 @@ img{
     text-wrap: pretty; 
 
     color: #E0E0E0
+}
+
+/* 
+    These are the styles to be used for the 'About' page.
+*/
+
+#aboutme-body-wrapper article section p{
+    margin-left: 10px;
+    font-size:   20px;
+    color:#E0E0E0
+}
+
+#aboutme-body-wrapper article section header{
+    background-color: #2B7DA4
+}
+
+#aboutme-body-wrapper article section h1{
+    margin-left: 10px;
+    color:#E0E0E0
+}
+
+#aboutme-body-wrapper #body-wrapper-images img{
+    display: none;
+}
+
+#aboutme-body-wrapper figure video{
+    width:  22rem;
+    height: 17rem;
+
+    float:left;
+    margin-left: -30px;
+    margin-top:    0px;
+
+    background-color: white;
+    border: 1px solid black;
 }
 
 .clear{

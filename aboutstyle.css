@@ -2,6 +2,7 @@
 
 body{
     background-image: linear-gradient(to bottom, black, white 200%);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 img{
     object-fit: contain;
@@ -41,13 +42,13 @@ img{
 /* Class Styles for the Home Page */
 .header-text header{
     float: right;
-    margin-right:  140px;
+    margin-right: 20px;
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  150px;
+    width:  155px;
     height: 15px;
 
     margin-top:   10px;
@@ -67,8 +68,8 @@ img{
 }
 
 #page-wrapper .box-filler{
-    width:   75px;
-    height: 75px;
+    width:   55px;
+    height:  75px;
     
     margin-top:  10px;
     margin-left:  5px;
@@ -83,11 +84,20 @@ img{
     border: 1px solid black;
 }
 
+#page-wrapper .box-filler img{
+    position:absolute;
+
+    width: 90px;
+    margin-top:   -5px;
+    margin-left: -20px;
+    float:left;
+    overflow:hidden;
+}
+
 /* ONLY FOR COMPUTERS */
 #page-wrapper .nav-section .box:hover {
     background-color: white;
 }
-
 
 #body-wrapper header{
     text-align: center;
@@ -133,7 +143,7 @@ img{
 
     float:left;
     margin-left: -30px;
-    margin-top:  30px;
+    margin-top:    0px;
 
     background-color: white;
     border: 1px solid black;

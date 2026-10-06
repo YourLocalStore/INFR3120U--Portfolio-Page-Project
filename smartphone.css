@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 body{
-    background-image: linear-gradient(to bottom, black, white 200%);
+    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img{
     object-fit: contain;
 }
+
 /* Styles for the Home Page Banner Section*/
 #page-wrapper{
     width:  100%;
@@ -14,8 +16,8 @@ img{
 
     margin: auto;
 
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: #2E3E50;
+    border: 1px solid #E0E0E0;
 }
 
 #banner-wrapper{
@@ -26,47 +28,74 @@ img{
     margin-left:  5px;
     margin:       auto;
 
-    border-bottom:    1px solid black;
-    background-color: beige;
+    border-bottom:    1px solid #E0E0E0;
+    background-color: #E0E0E0;
+}
+
+#banner-wrapper .header-text header{
+    width: 100%;
+    margin-right: 0px;
+    float: left;
+
+    color:#E0E0E0;
+    background-color: #2E3E50
+}
+
+#banner-wrapper .header-text header h1{
+    float: left;
+    margin-left: 70px;
+}
+
+#banner-wrapper .header-text header p{
+    float: left;
+    margin-left: 70px;
 }
 
 #banner-wrapper .header-image img{
-    width:  100px;
-    height: 80px;
-    display: block;
-
-    margin: 10px auto;
-}
-
-/* Class Styles for the Home Page */
-.header-text header{
-    float: none;
-    text-align: center;
+    display: none;
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  40%;
+    width:  50%;
     height: 25px;
 
     margin-top:   10px;
     margin-right:  5px;
-    margin-left:   5px;
+    margin-left: 50px;
 
-    padding-left:   0px;
+    float: left;
+
+    padding-left:   18px;
     padding-top:     0px;
     padding-bottom: 15px;
-    padding-right:  5px;
+    padding-right:  35px;
 
-    float:left;
+    background-color: #D94A64;
+    border: 1px solid #E0E0E0;
 
-    background-color: turquoise;
-    border: 1px solid black;
+    transition: 0.35s ease;
     font-size:  24px;
 }
 
+#page-wrapper .nav-section .box a:link{
+    color:#E0E0E0
+}
+
+#page-wrapper .nav-section .box a:visited{
+    color:#E0E0E0
+}
+
 #page-wrapper .box-filler{
+    display: none;
+}
+
+#page-indicator-box{
+    display: none;
+}
+
+#page-indicator-box h2{
     display: none;
 }
 
@@ -79,9 +108,9 @@ img{
 
     margin-top:10px;
 
-    background-color:white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    background-color:#D94A64;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0
 }
 
 #about-page-image{
@@ -93,43 +122,49 @@ img{
 #about-page-image img{
     width:  100%;
     height: 200px;
-    background-color:white;
+    background-color: #E0E0E0
 }
 
 #body-wrapper header h1{
     margin: 0px;
+    color: #E0E0E0
 }
 
 #body-wrapper article section p{
     margin-left: 10px;
     font-size:   20px;
+    color:#E0E0E0
 }
 
 #body-wrapper article section h2{
     margin-left: 10px;
+    color:#E0E0E0
 }
 
 #body-wrapper #img-projects-wrapper figure{
-    width:  90%;
+    width:  95%;
     height: 125px;
 
-    margin: 5px auto;
-    margin-left: 8px;
+    margin:       3px;
     padding-left: 11px;
-    float:left;
+    float: left;
 
-    background-color: white;
-    border: 1px solid black;
+    background-color:#2B7DA4;
+    border: 1px solid #E0E0E0;
 }
 
 #body-wrapper #img-projects-wrapper figure img{
     width: 100%;
     height: 70px;
+
+    margin-top: 20px;
+    color:#E0E0E0
 }
 
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
+    color:#E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -143,8 +178,8 @@ img{
     margin-top: 5px;
     margin: auto;
 
-    background: beige;
-    border: 1px solid black;
+    background: #E0E0E0;
+    border: 1px solid #E0E0E0
 }
 
 #footer-wrapper h2{
@@ -155,13 +190,17 @@ img{
     width: 100%;
     text-align: center;
     font-size: 125%;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 #footer-wrapper .copyright{
     width: 100%;
     text-align: center;
     font-size:  125%;
+}
+
+#footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
+    color: #2E3E50
 }
 
 .clear{

@@ -2,6 +2,7 @@
 
 body{
     background-image: linear-gradient(to bottom, black, white 200%);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 img{
     object-fit: contain;
@@ -41,34 +42,35 @@ img{
 /* Class Styles for the Home Page */
 .header-text header{
     float: right;
-    margin-right:  140px;
+    margin-right:  20px;
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  150px;
+    width:  155px;
     height: 15px;
 
     margin-top:   10px;
     margin-right:  5px;
 
+    float:right;
+
     padding-left:   18px;
     padding-top:     0px;
     padding-bottom: 15px;
     padding-right:  35px;
-    float:          right;
 
     background-color: turquoise;
     border: 1px solid black;
 
     transition: 0.35s ease;
-    font-size:  24px
+    font-size:  24px;
 }
 
 #page-wrapper .box-filler{
-    width:   75px;
-    height: 75px;
+    width:   55px;
+    height:  75px;
     
     margin-top:  10px;
     margin-left:  5px;
@@ -81,6 +83,16 @@ img{
 
     background-color: turquoise;
     border: 1px solid black;
+}
+
+#page-wrapper .box-filler img{
+    position:absolute;
+
+    width: 90px;
+
+    margin-top:   -5px;
+    margin-left: -20px;
+    float:left;
 }
 
 /* ONLY FOR COMPUTERS */

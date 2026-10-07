@@ -118,12 +118,9 @@ img{
     width: 90px;
     margin-left: -20px;
     float:left;
-    overflow:hidden;
 }
 
 #page-indicator-box{
-    position: relative;
-    
     width:853px;
     height:48px;
 
@@ -131,7 +128,7 @@ img{
     margin-right: 5px;
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
-    float:right
+    float:right;
 }
 
 #page-indicator-box h2{

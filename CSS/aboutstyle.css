@@ -4,44 +4,52 @@ body{
     background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-
 img{
     object-fit: contain;
 }
 
-#page-wrapper .project-img-box img{
-    width:240px;
-    height:170px;
-
-    margin-top: 20px;
-    margin-left: 20px;
-
-    background-color: #2B7DA4;
-    border: 1px solid #E0E0E0;
+#aboutme-body-wrapper article p{
+    margin-left: 10px;
+    font-size:   20px;
+    color:#E0E0E0
 }
 
-#page-wrapper .project-article-wrapper article h2{
-    position:absolute;
-    float:left;
+#aboutme-body-wrapper article section header{
+    background-color:#2B7DA4
+}
 
-    margin-left: 275px;
-    padding:3px;
+#aboutme-body-wrapper article h2{
+    margin-left: 10px;
+    color:#E0E0E0
+}
 
-    background-color: #2B7DA4;
-    border: 1px solid #E0E0E0;
+#aboutme-body-wrapper article section h3{
     color:#E0E0E0;
+    margin-left: 10px;
 }
 
-#page-wrapper .project-article-wrapper article p{
-    position:absolute;
+#aboutme-body-wrapper #body-wrapper-images img{
+    width:300px;
+    height:175px;
+
+    margin-right: 15px;
+    margin-top:   50px;
+
+    float:right;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#aboutme-body-wrapper figure video{
+    width:  935px;
+    height: 525px;
+
     float:left;
+    margin-left: -30px;
+    margin-top:    0px;
 
-    font-size: 20px;
-
-    margin-top:65px;
-    margin-left: 285px;
-
-    color: #E0E0E0
+    background-color: white;
+    border: 1px solid black;
 }
 
 #footer-wrapper footer{

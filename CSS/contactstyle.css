@@ -58,10 +58,6 @@ img{
     color: #e0e0e0
 }
 
-#form-wrapper .form-field label{
-    size: 60;
-}
-
 #form-wrapper .form-field textarea{
     min-width:  520px;
     max-width:  520px;

@@ -160,17 +160,45 @@ img{
     border-bottom: 1px solid #E0E0E0
 }
 
-#about-page-image{
+#homepage-image-jt{
     height: 200px;
     margin-top:10px;
-    background-color:white;
+
+    background-image: linear-gradient(to right, #2E3E50, transparent);
+    background-color:#E0E0E0;
+    border: 2px solid #E0E0E0;
 }
 
-#about-page-image img{
+#homepage-image-jt img{
+    position: relative;
     width:  960px;
     height: 200px;
-    background-color: #E0E0E0
+    margin-left: 300px;
 }
+
+#jt-banner-line1{
+    position: absolute;
+    width: 960px;
+    height: 140px;
+
+    margin-top: 30px;
+    margin-left:2px;
+    
+    background-color:#2E3E50
+}
+
+#body-wrapper #jt-banner-line1 h1{
+    text-align: left;
+
+    width:960px;
+    height:40px;
+
+    margin-top: 40px;
+    margin-left: 10px;
+
+    color:#E0E0E0;
+    font-size:52px;
+} 
 
 #body-wrapper header h1{
     margin: 0px;
@@ -184,6 +212,11 @@ img{
 }
 
 #body-wrapper article section h2{
+    margin-left: 10px;
+    color:#E0E0E0
+}
+
+#body-wrapper article h3{
     margin-left: 10px;
     color:#E0E0E0
 }
@@ -208,7 +241,6 @@ img{
 }
 
 #body-wrapper #img-projects-wrapper figcaption{
-    position: bottom;
     text-align: center;
     margin-right:10px;
 
@@ -238,6 +270,10 @@ img{
     border: 1px solid #E0E0E0
 }
 
+#footer-wrapper footer .footer-nav{
+    margin-top: 10px;
+}
+
 #footer-wrapper h2{
     margin-left: 5px;
 }
@@ -251,7 +287,9 @@ img{
     float:left;
 }
 
-#footer-wrapper .copyright h6 p{
+#footer-wrapper .copyright p{
+    font-size:16px;
+    margin-top:25px;
     color:#2E3E50
 }
 

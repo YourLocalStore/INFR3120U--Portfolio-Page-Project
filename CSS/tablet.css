@@ -11,6 +11,8 @@ img{
 
 /* 
     Styles for the Home Page
+    Anything called in here will not otherwise be called in other HTML pages,
+    as long as they are named correctly and according to the page. 
 */
 #page-wrapper{
     width:  100%;
@@ -35,42 +37,55 @@ img{
 }
 
 #banner-wrapper .header-text header{
-    width: 100%;
+    width: 91%;
     margin-right: 0px;
     float: right;
-    text-align: center;
+    text-align: right;
 
     color:#E0E0E0;
     background-color: #2E3E50
 }
 
 #banner-wrapper .header-text header h1{
-    margin-left: 0px;
+    margin-right: 10px;
+    margin-left: 70px;
 }
 
 #banner-wrapper .header-text header p{
-    margin-left: 0px;
+    margin-right: 10px;
+    margin-left: 70px;
 }
 
 #banner-wrapper .header-image img{
-    display: none;
+    width:  100px;
+    height: 100px;
+    float: none;
+    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
+
+    margin-top: -120px;
+    margin-left: 10px;
+
+    background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #2E3E50 50%, #E0E0E0 50%);
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  21%;
+    width:  95%;
     height: 25px;
 
     margin-top:   10px;
-    margin-right:  7px;
+    margin-right: 20px;
 
     float:right;
 
-    padding-left:   135px;
+    padding-left:   0px;
     padding-top:     0px;
     padding-bottom: 15px;
-    padding-right:  135px;
 
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
@@ -113,16 +128,44 @@ img{
     border-bottom: 1px solid #E0E0E0
 }
 
-#about-page-image{
+#homepage-image-jt{
     height: 200px;
     margin-top:10px;
-    background-color:white;
+
+    background-image: linear-gradient(to right, #2E3E50, transparent);
+    background-color:#E0E0E0;
+    border: 2px solid #E0E0E0;
 }
 
-#about-page-image img{
+#homepage-image-jt img{
+    position:absolute;
     width:  100%;
     height: 200px;
-    background-color: #E0E0E0
+    margin-left:16rem;
+}
+
+#jt-banner-line1{
+    position:absolute;
+    width: 100%;
+    height: 140px;
+
+    margin-top: 30px;
+    margin-left:2px;
+    
+    background-color:#2E3E50
+}
+
+#body-wrapper #jt-banner-line1 h1{
+    text-align: left;
+
+    width:100%;
+    height:40px;
+
+    margin-top: 0px;
+    margin-left: 10px;
+
+    color:#E0E0E0;
+    font-size:52px;
 }
 
 #body-wrapper header h1{
@@ -142,7 +185,7 @@ img{
 }
 
 #body-wrapper #img-projects-wrapper figure{
-    width:  95%;
+    width:  45%;
     height: 125px;
 
     margin:       3px;
@@ -155,8 +198,6 @@ img{
 
 #body-wrapper #img-projects-wrapper figure img{
     width: 100%;
-
-    margin-top:20px;
     height: 70px;
 
     color:#E0E0E0
@@ -165,7 +206,7 @@ img{
 #body-wrapper #img-projects-wrapper figcaption{
     text-align: center;
     margin-right:10px;
-    color: #E0E0E0
+    color:#E0E0E0
 }
 
 #body-wrapper #about-img-wrapper img{
@@ -183,6 +224,10 @@ img{
     border: 1px solid #E0E0E0
 }
 
+#footer-wrapper footer .footer-nav{
+    margin-top: 10px;
+}
+
 #footer-wrapper h2{
     margin-left: 5px;
 }
@@ -197,7 +242,7 @@ img{
 #footer-wrapper .copyright{
     width: 100%;
     text-align: center;
-    font-size:  125%;
+    font-size:  100%;
 }
 
 #footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
@@ -206,24 +251,22 @@ img{
 
 /* 
     These are the styles to be used for the 'Projects' page.
-    Anything called in here will not otherwise be called in other HTML pages,
-    as long as they are named correctly and according to the page. 
 */
 
 #page-wrapper .project-img-box img{
     width:95%;
     height:150px;
 
-    margin-left: 10px;
+    margin-left: 20px;
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
 }
 
-#page-wrapper .project-article-wrapper article h2{
+#page-wrapper .project-article-wrapper h2{
     width: 95%;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 20px;
 
     background-color: #2B7DA4;
     border: 1px solid #E0E0E0;
@@ -231,15 +274,14 @@ img{
     color: #E0E0E0
 }
 
-#page-wrapper .project-article-wrapper article p{
-    text-align: center;
+#page-wrapper .project-article-wrapper p{
+    text-align: left;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
 
     /* have to explain where this one comes from
     not in course notes */
     text-wrap: pretty; 
-
     color: #E0E0E0
 }
 
@@ -247,7 +289,7 @@ img{
     These are the styles to be used for the 'About' page.
 */
 
-#aboutme-body-wrapper article section p{
+#aboutme-body-wrapper article p{
     margin-left: 10px;
     font-size:   20px;
     color:#E0E0E0
@@ -257,7 +299,12 @@ img{
     background-color: #2B7DA4
 }
 
-#aboutme-body-wrapper article section h1{
+#aboutme-body-wrapper article section h3{
+    color:#E0E0E0;
+    margin-left: 10px;
+}
+
+#aboutme-body-wrapper article h2{
     margin-left: 10px;
     color:#E0E0E0
 }
@@ -267,11 +314,15 @@ img{
 }
 
 #aboutme-body-wrapper figure video{
-    width:  22rem;
-    height: 17rem;
+    /* 
+        Video is quite large dimensionally, so it might be better to scale it down using rem,
+        as it will also scale down with the text 
+    */
+    width:  100%;
+    height: 420px;
 
     float:left;
-    margin-left: -30px;
+    margin-left:   0px;
     margin-top:    0px;
 
     background-color: white;
@@ -313,14 +364,9 @@ img{
     border-bottom: 1px solid #E0E0E0;
 }
 
-#form-wrapper header h1{
-    font-size: 24px;
-    margin-top: 5px;
-}
-
-#form-wrapper header p{
-    font-size: 16px;
-
+#form-wrapper header h1, #form-wrapper header p{
+    margin-top: 0px;
+    margin-left: 20px;
 }
 
 #form-wrapper .form-field label{
@@ -335,11 +381,11 @@ img{
 }
 
 #form-wrapper .form-field textarea{
-    min-width:  300px;
-    max-width:  300px;
+    min-width:  550px;
+    max-width:  550px;
 
-    min-height: 30px;
-    max-height: 100px;
+    min-height: 50px;
+    max-height: 150px;
 
     margin-top:-10px;
 }
@@ -347,7 +393,7 @@ img{
 #form-wrapper #submit-button input{
     width: 40%;
     height:35px;
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 .clear{

@@ -41,10 +41,18 @@ Attached below, are the media queries I use:
       href="./CSS/smartphone.css"
       media="only screen and (max-width:479px)">
 ```
-###### ** Disclaimer that all pixel widths are tested on a Desktop environment, using DevTools to see how specific devices fit and respond to my webpage.
+###### ** Disclaimer that all pixel widths are tested on a desktop environment, using DevTools to see how specific devices fit and respond to my webpage.
 
 ### Viewport #1 - Fully-Sized Screens (Desktops, Laptops, etc..)
 The reason why I use at least a minimum portrait width of ```960px``` is because that is how all the content of my page is measured across. This accounts for my main page wrapper, which is specified to hold that fixed width.
+
+```css
+#page-wrapper{
+    width:  960px;
+    min-height: 1024px;
+    ...
+}
+```
 
 In order to have the full experience of my design, I needed any device >= ```960px``` in viewport width. You also find that many other devices (like tablets, especially older ones, or foldable phones) seem to fall below or under
 that threshold, especially after testing devices like the ```iPad Mini, Galaxy Z Fold 5/6, Surface Pro 10, etc.,``` within DevTools. 
@@ -54,7 +62,7 @@ I use at least a minimum portrait width of ```480px``` and a maximum portrait wi
 and the devices mentioned in **Viewport 1**. 
 
 Arguably while these devices also fall under the smartphone category, having the extra screen extends that viewport width even further, even past ```480px``` and ```960px```, so a "middle" breakpoint is necessary. 
-Another point I want to note is to also accommodate for many of the older devices that have a viewport width larger than ```480px```, so they do not get categorized for "smartphone" width, which leaves smaller elements on the page.
+Another point I want to note is to also accommodate for many of the older devices that have a viewport width larger than ```480px```, so they do not get categorized for "smartphone width", which leaves smaller elements on the page.
 
 ### Viewport #3 - Smartphones
 The maximum width of ```479px``` was to again follow along with the constraints of **Viewport 2**, but also, many smartphones, even one of the newer [iPhone models](https://www.webmobilefirst.com/en/devices/apple-iphone-18-pro-max-2026/) have a viewport width decently under ```480px```. 

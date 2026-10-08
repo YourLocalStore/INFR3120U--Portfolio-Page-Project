@@ -92,7 +92,23 @@ In the case the visitor has a small enough viewport (i.e., Viewport #3 for Smart
 ```
 ![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/angled-linear-gradient-page.png)
 
-
-
 # Color Scheme Choices
-colors!
+Four colors were used in this page, though the course states at least five colors are recommended, I thought it was enough for my page, especially with so many elements squeezed into one 960px wrapper (excluding the footer), it would have otherwise
+created some visual clutter. These four colors (in their respective hex format) are:
+- #D94A64 (Warm Red)
+- #2B7DA4 (Azure)
+- #2E3E50 (Dark Azure)
+- #E0E0E0 (Light, White-ish Gray)
+
+An insight to their purpose is also written out below.
+![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/page-color-scheme.png)
+
+An insight to the colors, and their purpose:
+- #D94A64 (Warm Red), is mainly used for nagivation, so it's easier for visitors to see what header they are reading under, or specific buttons on the page.
+- #2B7DA4 (Azure), which is used as a background for the images scattered throughout the site. It is meant to create lighter contrast between the background (which uses #2E3E50), and the image itself.
+- #2E3E50 (Dark Azure), used as a background color.
+- #E0E0E0 (Light, White-ish Gray), which has the same purpose as #2E3E50, but is also used for border coloring for separation and as a text color between elements.
+
+###### Displayed below is an example from the home page.
+![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/color-scheme-example.png)
+

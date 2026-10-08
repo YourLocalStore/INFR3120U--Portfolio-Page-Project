@@ -72,20 +72,25 @@ From my overall testing in DevTools, it also seemed as though many of these smar
 There are only two instances where I use a linear gradient and an angled linear gradient within my website.
 
 ### Instance 1 - Linear Gradient to Cover the Whole Page
+This linear gradient is used throughout all my website pages, and is colored to fit in with my color scheme. It is behind all body, header, and footer content.
 ```css
 body{
     background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
     ...
 }
 ```
+![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/linear-gradient-page.png)
 
 ### Instance 2 - Angled Linear Gradient for a Header Image
+This angled linear gradient uses a parameter of 90 degrees (clockwise) as an aesthetic/design choice to make my image within the top header to stand out a little more using contrast. It will be seen throughout all of my pages.
+In the case the visitor has a small enough viewport (i.e., Viewport #3 for Smartphones), both the image and gradient disappear.
 ```css
 #banner-wrapper .header-image img{
     background-image: linear-gradient(90deg, #2E3E50 50%, #E0E0E0 50%);
     ...
 }
 ```
+![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/angled-linear-gradient-page.png)
 
 
 

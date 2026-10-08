@@ -50,7 +50,8 @@ In order to have the full experience of my design, I needed any device >= ```960
 that threshold, especially after testing devices like the ```iPad Mini, Galaxy Z Fold 5/6, Surface Pro 10, etc.,``` within DevTools. 
 
 ### Viewport #2 - Tablets
-I use at least a minimum portrait width of ```480px``` and a maximum portrait width of ```959px``` to both follow from the constraints of **Viewport #1**, as well as accounting for foldable devices (e.g., the Surface Duo, which measures ```540px``` for one side). 
+I use at least a minimum portrait width of ```480px``` and a maximum portrait width of ```959px``` to both follow from the constraints of **Viewport #1**, as well as accounting for foldable devices (e.g., the Surface Duo, which measures ```540px``` for one side)
+and the devices mentioned in **Viewport 1**. 
 
 Arguably while these devices also fall under the smartphone category, having the extra screen extends that viewport width even further, even past ```480px``` and ```960px```, so a "middle" breakpoint is necessary. 
 Another point I want to note is to also accommodate for many of the older devices that have a viewport width larger than ```480px```, so they do not get categorized for "smartphone" width, which leaves smaller elements on the page.

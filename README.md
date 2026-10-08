@@ -10,7 +10,7 @@ Here, I will explain many of the details that went into my page, such as:
 As a quick note, this portfolio is also being deployed on [Github Pages](https://yourlocalstore.github.io/INFR3120U--Portfolio-Page-Project/).
 
 **All** HTML formatting and CSS styling has been written by me, only with the help of course lectures and documentation.
-Furthermore, most of the images used in this portfolio are either used by me, while some are fairly used under [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page).
+Furthermore, most of the images used in this portfolio are taken by me, while some are fairly used under [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page).
 ###### * Citations can be found by clicking here
 
 # Viewport Choices

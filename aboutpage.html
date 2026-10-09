@@ -7,6 +7,10 @@
 
     <!-- Computers or any device >= 960px in viewport width 
          The maximum width is either 960px or above.
+         
+         Two stylesheets are using the same query, because I want to remove redundancy between
+         pages. Instead of declaring common elements in both sheets, keep it in one, and call it 
+         along with the page that contains the styling for unique elements.        
     -->
     <link rel="stylesheet" 
           type="text/css" 
@@ -33,55 +37,67 @@
           type="text/css" 
           href="./CSS/smartphone.css"
           media="only screen and (max-width:479px)"> 
-     
+    
+    <!--This creates the browser title for the tab.-->
     <title>INFR3120 Portfolio Page - HOME</title>
 </head>
 
 <body>
+
+    <!--This div is what wraps around the entire page, as a single entity.
+        I want to keep everything within this wrapper centered.-->
     <div id="page-wrapper">
-        <div id="banner-wrapper">
-            <div class="header-text">
-                <header>
+        <div id="banner-wrapper">       <!--This is a div for the banner at the top of the portfolio.-->
+            <div class="header-text">   <!--This is a div for the header text within the banner-wrapper div-->
+                <header>                
                     <h1>Joshua — Networking and IT Security Student</h1>
                     <p>Nice to Meet You!</p>
                 </header>
             </div>
-            <div class="clear"></div>
-
-            <div class="header-image">
+            <div class="clear"></div>   <!--Page flow needs to be cleared, as I do not want the subsequent elements to inherit a float.-->
+                   
+            <div class="header-image">  <!-- This creates a div, for the banner, which is for an image beside the header-text div. --> 
                 <img src="./Images/jt_transparent2.png" 
                      alt="An image of the author in a white shirt.">
             </div>
-
-            <!--TODO: Float this navbar left, across from the title header of this page.-->
             <div class="clear"></div>
+
+            <!--Keep a section of the page, reserved for navigation.-->
             <div class="nav-section">
                 <!--Create a navigation bar with all navigation options-->
                 <nav>
+                    <!-- Contact Page Link -->
                     <div class="box">
                         <a href="contactpage.html">Contact</a>
                     </div>
                     
+                    <!-- About Page Link -->
                     <div class="box">
                         <a href="aboutpage.html">About</a>
                     </div>
                     
+                    <!-- Project Page Link -->
                     <div class="box">
                         <a href="projectpage.html">Projects</a>
                     </div>
 
+                    <!-- Home Page Link -->
                     <div class="box">
                         <a href="index.html">Home</a>
                     </div>
-
-                    <div class="box-filler">
-                        <img src="./Images/abouticon.png"
-                             alt="A drawing of a person with a question mark on their torso.">
-                    </div>
+                    
                     <div class="clear"></div>
                 </nav>
             </div> 
 
+            <!-- This is essentially a "filler" div beside the navigation bar. It serves no other purpose
+                 than to use an image indicating where you are on the page.-->
+            <div id="box-filler">
+                <img src="./Images/abouticon.png"
+                     alt="A drawing of a person with a question mark on their torso.">
+            </div>
+
+            <!-- Another "filler" div, but under the navigation bar. It tells the user, in text, where you are on the page.-->
             <div id="page-indicator-box">
                 <header>
                     <h2>
@@ -89,13 +105,17 @@
                     </h2>
                 </header>
             </div>
-
-        </div>     <!-- END OF BANNER WRAPPER-->
+        </div> <!-- END OF BANNER WRAPPER-->
         <div class="clear"></div>
 
+        <!--This wraps the entire body section (under the navigation section and above the footer) within a div.-->
         <div id="aboutme-body-wrapper">
+
+             <!-- Since this page talks about me, keep an article and different sections.-->
             <article>
                 <header><h2>Introducing...</h2></header>
+
+                <!-- Article Section #1-->
                 <section>
                     <h3>Joshua!</h3>
                     <p>
@@ -104,31 +124,33 @@
                     </p>
                 </section>
 
+                <!-- The reason why this is not a section as well, is because it does not need a header.-->
                 <p>
                     I am looking to become a Network Engineer or a Systems Administrator in the future! I also love <br>
                     participating in Robotics every once in a while.
                 </p>
-
+                
+                <!-- Here, we are implementing a video, as a figure, since it is directly related to the content.-->
                 <figure> 
-                    <video controls      poster="./Images/aboutmeposter.png" 
-                            height="175"  width ="330" 
-                            preload       id    ="video"
-                            muted>
+                    <!-- Video implementation, this video is a main part of the page, so we can try to preload it as soon as the user loads in.-->
+                    <video controls      poster="./Images/aboutmeposter.png"  
+                            preload       id    ="video">
 
-                            <source src="./Videos/aboutmevideo.mp4" type="video/mp4">
-                            Your browser does not support this
+                            <source src="./Videos/aboutmevideo.mp4" type="video/mp4"> <!-- Original file format of the video -->
+                            Your browser does not support this! <!-- Extra message in the case that the browser does not support .mp4 -->
                     </video>
                 </figure>
-
-            </article>
-        </div>   
+            </article> 
+        </div> <!-- END OF ABOUT ME WRAPPER-->
     </div>
 
+    <!-- Floats need to be cleared in order to make way for the footer. -->
     <div class="clear"></div>
 
+    <!-- Create a separate section for the footer-->
     <div id="footer-wrapper">
         <footer>
-            <div class="footer-nav">
+            <div class="footer-nav"> <!-- A sub-div of the wrapper, reserved for more navigation accessibility on the page.-->
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="projectpage.html">Projects</a>
@@ -136,7 +158,8 @@
                     <a href="contactpage.html">Contact</a>
                 </nav>
             </div>
-
+            
+            <!-- Create another part of our wrapper, which tells the user about the copyright. -->
             <div class="copyright">
                 <p>
                     © 2026, Joshua Tuibuen <br>

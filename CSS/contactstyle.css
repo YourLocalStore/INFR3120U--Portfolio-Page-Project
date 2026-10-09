@@ -1,14 +1,27 @@
 @charset "UTF-8";
 
+/* Look for everything within the body tag. */
 body{
-    background-image: linear-gradient(to bottom, black, white 200%);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, black, white 200%); /* This is used mainly for the background coloring, behind the main section of the page. */
+    font-family: Tahoma, Geneva, Verdana, sans-serif; /* Use a font family to support different browser fonts, in case one of them isn't.*/
 }
+
+/* Look for all images within the page. */
 img{
     object-fit: contain;
 }
 
-/* Styles for the Contact Page Form Section*/
+/*  Styles for the Contact Page
+
+    This stylesheet only contains the unique elements from the Contact page. Any elements like the heading banner, nav bar,
+    and footer will be contained in 'homestyle.css', which removes any redundancy.
+
+    All selections are placed in the style sheet in it's respective vertical order. E.g., if the footer was at the bottom
+    of the page, it will be at the bottom of this stylesheet. 
+*/
+
+
+/* STYLES FOR THE FORM OF THE PAGE */
 #form-wrapper{
     width: 960px;
     height:500px;
@@ -74,3 +87,4 @@ img{
     float:right;
     margin-right: 12px;
 }
+/* END OF FORM WRAPPER STYLING */

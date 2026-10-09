@@ -1,21 +1,29 @@
 @charset "UTF-8";
 
+/* Look for everything within the body tag. */
 body{
-    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0); /* This is used mainly for the background coloring, behind the main section of the page. */
+    font-family: Tahoma, Geneva, Verdana, sans-serif; /* Use a font family to support different browser fonts, in case one of them isn't.*/
 }
 
+/* Look for all images within the page. */
 img{
-    object-fit: contain;
+    object-fit: contain; /* This particular declaration allows images to be contained within its borders, unstretched. */
 }
 
-/* 
-    Styles for the Home Page
-    Anything called in here will not otherwise be called in other HTML pages,
-    as long as they are named correctly and according to the page. 
+/*  Styles for all pages, when considered to be under "tablet width" (min-width=480px) and (max-width=959px).
+    * You can find more about the viewport choices in the README.md file.
+
+    This particular sheet accounts for all the elements, from all pages, to be relatively sized according to the fixed pixel widths
+    in their original stylesheets (i.e., homestyle.css, projectstyle.css, etc).
+
+    Furthermore, it will focus on the relative values only as well as a few design choices which alters the content that 
+    the visitor may or may not view.
 */
+
+/* STYLES FOR THE HOME PAGE (homestyle.css) */
 #page-wrapper{
-    width:  100%;
+    width:  100%; /* Since the main part is styled to fit 960px, then keep the width at 100% for as much as the visitor can see. */
     min-height: 1024px;
 
     margin: auto;
@@ -25,7 +33,7 @@ img{
 }
 
 #banner-wrapper{
-    width:  100%;
+    width:  100%; /* Also styled to fit 960px, then keep the width at 100% for as much as the visitor can see. */
     height: 180px;
 
     margin-top:   5px;
@@ -37,7 +45,7 @@ img{
 }
 
 #banner-wrapper .header-text header{
-    width: 91%;
+    width: 91%; /* Styled from 887px, it is still a significant part, so have it largely sized*/
     margin-right: 0px;
     float: right;
     text-align: right;
@@ -57,7 +65,7 @@ img{
 }
 
 #banner-wrapper .header-image img{
-    width:  100px;
+    width:  100px; /* The reason why this one stays constant is because I do not want it to shrink. The original image is quite small. */
     height: 100px;
     float: none;
     position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
@@ -68,14 +76,14 @@ img{
     background-color: #E0E0E0;
     border: 1px solid #E0E0E0;
     
-    border-radius: 50%;
+    border-radius: 50%; /* Make the image rounded by 50% around the corners */
     background-image: linear-gradient(45deg, #2E3E50 50%, #E0E0E0 50%);
 }
 
 #page-wrapper .nav-section .box{
     text-align: center;
 
-    width:  95%;
+    width:  95%; /* The boxes within the navigation bar will still need to be large, for accessibility purposes. */
     height: 25px;
 
     margin-top:   10px;
@@ -102,23 +110,22 @@ img{
     color:#E0E0E0
 }
 
-#page-wrapper .box-filler{
-    display: none;
+#page-wrapper #box-filler{
+    display: none; /* This is to hide the filler box image that indicates where a user is on the page, in order to leave space */
 }
 
 #page-indicator-box{
-    display: none;
+    display: none; /* This is to hide the another filler box hat indicates where a user is on the page */
 }
 
 #page-indicator-box h2{
-    display: none;
+    display: none; /* This is to hide the filler box text that indicates where a user is on the page*/
 }
 
-/* Styles for the Home Page Body Section*/
 #body-wrapper header{
     text-align: center;
 
-    width:100%;
+    width:100%; /* This is to hide the filler box text that indicates where a user is on the page*/
     height:40px;
 
     margin-top:10px;
@@ -139,14 +146,14 @@ img{
 
 #homepage-image-jt img{
     position:absolute;
-    width:  100%;
+    width:  100%; /* Keep at 960px, scaled with the users viewport. */
     height: 200px;
     margin-left:16rem;
 }
 
 #jt-banner-line1{
-    position:absolute;
-    width: 100%;
+    position:absolute; 
+    width: 100%; /* Also at 960px, since a tablet can be quite large and will still be able to view this banner.*/
     height: 140px;
 
     margin-top: 30px;
@@ -158,7 +165,7 @@ img{
 #body-wrapper #jt-banner-line1 h1{
     text-align: left;
 
-    width:100%;
+    width:100%; 
     height:40px;
 
     margin-top: 0px;
@@ -185,6 +192,9 @@ img{
 }
 
 #body-wrapper #img-projects-wrapper figure{
+    /* This keeps the width small enough so that it spaces out nicely, across the viewport, as it gets smaller.
+       Scaled from 300px.
+    */
     width:  45%;
     height: 125px;
 
@@ -213,48 +223,9 @@ img{
     display: none;
 }
 
-#footer-wrapper footer{
-    width:  100%; 
-    height: 100px;
-
-    margin-top: 5px;
-    margin: auto;
-
-    background: #E0E0E0;
-    border: 1px solid #E0E0E0
-}
-
-#footer-wrapper footer .footer-nav{
-    margin-top: 10px;
-}
-
-#footer-wrapper h2{
-    margin-left: 5px;
-}
-
-#footer-wrapper .footer-nav{
-    width: 100%;
-    text-align: center;
-    font-size: 125%;
-    margin-top: -10px;
-}
-
-#footer-wrapper .copyright{
-    width: 100%;
-    text-align: center;
-    font-size:  100%;
-}
-
-#footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
-    color: #2E3E50
-}
-
-/* 
-    These are the styles to be used for the 'Projects' page.
-*/
-
+/* STYLES FOR THE PROJECTS PAGE (projectstyle.css) */
 #page-wrapper .project-img-box img{
-    width:95%;
+    width:95%; /* Scaling from 240px, which should be enough to not overflow across the page, and keep the image visibly clear. */
     height:150px;
 
     margin-left: 20px;
@@ -264,7 +235,7 @@ img{
 }
 
 #page-wrapper .project-article-wrapper h2{
-    width: 95%;
+    width: 95%; /* Scale the header slightly smaller, in order to partially offset the element for spacing */
     text-align: center;
     margin-left: 20px;
 
@@ -276,19 +247,15 @@ img{
 
 #page-wrapper .project-article-wrapper p{
     text-align: left;
+
     font-size: 20px;
+    text-wrap: pretty; 
     margin-left: 20px;
 
-    /* have to explain where this one comes from
-    not in course notes */
-    text-wrap: pretty; 
     color: #E0E0E0
 }
 
-/* 
-    These are the styles to be used for the 'About' page.
-*/
-
+/* STYLES FOR THE ABOUT PAGE (aboutstyle.css) */
 #aboutme-body-wrapper article p{
     margin-left: 10px;
     font-size:   20px;
@@ -314,11 +281,7 @@ img{
 }
 
 #aboutme-body-wrapper figure video{
-    /* 
-        Video is quite large dimensionally, so it might be better to scale it down using rem,
-        as it will also scale down with the text 
-    */
-    width:  100%;
+    width:  100%; /* Scaling from 935px, which may be enough to keep the video large, but allow bigger control buttons to be pressed */
     height: 420px;
 
     float:left;
@@ -329,18 +292,15 @@ img{
     border: 1px solid black;
 }
 
-/* 
-    These are the styles to be used for the 'Contact' page.
-*/
-
+/* STYLES FOR THE CONTACT PAGE (contactstyle.css) */
 #form-wrapper{
-    width:   100%;
+    width:   100%; /* Scaled from 960 px, where the form needs to have space, but be large enough for visitors to see */
     height: 500px;
     text-align: center;
 }
 
 #form-container{
-    width:  100%;
+    width:  100%; /* Scaled from 550px, where it needs be large enough for visitors to use */
     height: 600px;
 
     margin-top: -35px;
@@ -352,7 +312,7 @@ img{
 #form-wrapper header{
     text-align: center;
 
-    width:  100%;
+    width:  100%; /* Scaled from 960px, to make text more viewable on the header */
     height: 85px;
 
     margin-top:10px;
@@ -381,21 +341,62 @@ img{
 }
 
 #form-wrapper .form-field textarea{
+    /* These heights and widths are arbitraily chosen, such that the visitor can not extend the text area past
+       the boundaries of the form-wrapper div.
+    */
     min-width:  550px;
     max-width:  550px;
 
-    min-height: 50px;
+    min-height: 50px; 
     max-height: 150px;
 
     margin-top:-10px;
 }
 
 #form-wrapper #submit-button input{
-    width: 40%;
+    width: 40%; /* Scaled from 200px, in the case it gets too big, and the visitor presses it by accident. */
     height:35px;
     margin-left: 250px;
 }
 
+/* STYLES FOR THE FOOTER (homestyle.css) */
+#footer-wrapper footer{
+    width:  100%;  /* Scaled from 960px. Same idea as header, where it needs to be largely visible. */
+    height: 100px;
+
+    margin-top: 5px;
+    margin: auto;
+
+    background: #E0E0E0;
+    border: 1px solid #E0E0E0
+}
+
+#footer-wrapper footer .footer-nav{
+    margin-top: 10px;
+}
+
+#footer-wrapper h2{
+    margin-left: 5px;
+}
+
+#footer-wrapper .footer-nav{
+    width: 100%;
+    text-align: center;
+    font-size: 125%; /* Enlarge the text, because it can get small, making the navigation experience unpleasant. */
+    margin-top: -10px;
+}
+
+#footer-wrapper .copyright{
+    width: 100%;
+    text-align: center;
+    font-size:  100%;
+}
+
+#footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
+    color: #2E3E50
+}
+
+/* This is a class mainly for clearing the inherited floats that might come after some element on the page. */
 .clear{
-    clear:both
+    clear:both /* Clear the left and right floats of the page. */
 }

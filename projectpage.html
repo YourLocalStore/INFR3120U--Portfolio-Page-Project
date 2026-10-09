@@ -7,6 +7,10 @@
 
     <!-- Computers or any device >= 960px in viewport width 
          The maximum width is either 960px or above.
+
+         Two stylesheets are using the same query, because I want to remove redundancy between
+         pages. Instead of declaring common elements in both sheets, keep it in one, and call it 
+         along with the page that contains the styling for unique elements.
     -->
     <link rel="stylesheet" 
           type="text/css" 
@@ -27,63 +31,73 @@
           media="only screen and (min-width:480px) and (max-width: 960px)">
 
     <!-- Computers or any device < 480px in viewport width 
-         The maximum width is 479px.-->
+         The maximum width is 479px.
+    -->
     <link rel="stylesheet" 
           type="text/css" 
           href="./CSS/smartphone.css"
           media="only screen and (max-width:479px)">
 
+    <!--This creates the browser title for the tab.-->
     <title>INFR3120 Portfolio Page - PROJECTS</title>
 </head>
 
 <body>
     <!--Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
-        This is to group information together into their corresponding, related area.-->
-    <div id="page-wrapper">
-        <div id="banner-wrapper">
-            <div class="header-text">
+        This is to group information together into their corresponding, related area.
+    -->
+    <div id="page-wrapper">           <!-- Everything (except the footer) is within a div, for centering purposes. -->
+        <div id="banner-wrapper">     <!--This is a div for the banner at the top of the portfolio.-->
+            <div class="header-text"> <!--This is a div for the header text within the banner-wrapper div-->
                 <header>
                     <h1>Joshua — Networking and IT Security Student</h1>
                     <p>Nice to Meet You!</p>
                 </header>
             </div>
-            <div class="clear"></div>
+            <div class="clear"></div>  <!--Page flow needs to be cleared, as I do not want the subsequent elements to inherit a float.-->
 
-            <div class="header-image">
+            <div class="header-image"> <!-- This creates a div, for the banner, which is for an image beside the header-text div. -->
                 <img src="./Images/jt_transparent2.png"
                      alt="An image of the author in a white shirt.">
             </div>
 
-            <!--TODO: Float this navbar left, across from the title header of this page.-->
+            <!--Keep a section of the page, reserved for navigation.-->
             <div class="clear"></div>
             <div class="nav-section">
                 <!--Create a navigation bar with all navigation options-->
                 <nav>
+                     <!-- Contact Page Link -->                   
                     <div class="box">
                         <a href="contactpage.html">Contact</a>
                     </div>
 
+                    <!-- About Page Link -->
                     <div class="box">
                         <a href="aboutpage.html">About</a>
                     </div>
 
+                    <!-- Project Page Link -->
                     <div class="box">
                         <a href="projectpage.html">Projects</a>
                     </div>
 
+                    <!-- Home Page Link -->
                     <div class="box">
                         <a href="index.html">Home</a>
-                    </div>
-
-                    <div class="box-filler">
-                        <img src="./Images/projects_icon.png"
-                             alt="A drawing of a piece of written paper, and a laptop, side by side">
                     </div>
                     
                     <div class="clear"></div>
                 </nav>
             </div>
 
+            <!-- This is essentially a "filler" div beside the navigation bar. It serves no other purpose
+                 than to use an image indicating where you are on the page.-->
+            <div id="box-filler">
+                <img src="./Images/projects_icon.png"
+                        alt="A drawing of a piece of written paper, and a laptop, side by side">
+            </div>
+
+            <!-- Another "filler" div, but under the navigation bar. It tells the user, in text, where you are on the page.-->
             <div id="page-indicator-box">
                 <header>
                     <h2>
@@ -95,24 +109,27 @@
         </div> <!-- END OF BANNER WRAPPER-->
         <div class="clear"></div>
 
-        <!-- PROJECT #1 -->
-        <div class="project-article-wrapper">
-            <h2>Student Management System (Python, SQL)</h2>
+        <!-- Project #1: Student Management System -->
+        <div class="project-article-wrapper"> <!-- These will be kept as divs, not wrapped in one singular divs. They should be separated.-->
+            <h2>Student Management System (Python, SQL)</h2> 
             <p>
                 This is a project made using Python and MySQL for an Object Oriented            <br>
                 Programming course as a final project. While run locally, it supports           <br>
                 many different features: Local login, adding/removing students & faculty,       <br>
                 and viewing account information.                                                <br>
+
+                <!-- Only project that has a Github repository link, so create one here-->
                 <a href="https://github.com/YourLocalStore/SMS_Beta"><mark>* Click to view the public repository here!</mark></a>
             </p>
-        </div>
+        </div> 
 
+        <!-- Project #1 Image -->
         <div class="project-img-box">
             <img src="./Images/sms.png"
                  alt="An logo of the author's program, the 'Student Management System'">
         </div>
 
-        <!-- PROJECT #2 -->
+        <!-- Project #2: Implementing and Designing Networks in Packet Tracer -->
         <div class="project-article-wrapper">
             <h2>Designing and Implementing Networks (Packet Tracer)</h2>
             <p>
@@ -123,12 +140,13 @@
             </p>
         </div>
 
+        <!-- Project #2 Image -->
         <div class="project-img-box">
             <img src="./Images/packet.png"
                  alt="An image of a Packet Tracer topology">
         </div>
 
-        <!-- PROJECT #3 -->
+        <!-- Project #3: Fibonacci Sequence in RISC-V -->
         <div class="project-article-wrapper">
             <h2>Fibonacci Sequence (RISC-V)</h2>
             <p>
@@ -137,14 +155,15 @@
                 Fibonacci sequence both in an iterative and recursive manner.           <br>
             </p>
         </div>
-        
+
+        <!-- Project #3 Image -->
         <div class="project-img-box">
             <img src="./Images/fib.png"
                  alt="A snapshot of the author's RISC-V code">
         </div>
         
 
-        <!-- PROJECT #4 -->
+        <!-- Project #4: Multithreaded Sockets in Python -->
         <div class="project-article-wrapper">
             <h2>Multithreaded Sockets (Python)</h2>
             <p>
@@ -154,17 +173,18 @@
             </p>
         </div>
 
+        <!-- Project #4 Image -->
         <div class="project-img-box">
             <img src="./Images/socket.png"
                  alt="A snapshot of the author's Python code">
         </div>
-        
     </div>
-
     <div class="clear"></div>
+
+    <!-- Create a separate section for the footer-->
     <div id="footer-wrapper">
-        <footer>
-            <div class="footer-nav">
+        <footer> <!-- Structure the footer using the semantic tag for footers -->
+            <div class="footer-nav"> <!-- A sub-div of the wrapper, reserved for more navigation accessibility on the page.-->
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="projectpage.html">Projects</a>
@@ -172,7 +192,8 @@
                     <a href="contactpage.html">Contact</a>
                 </nav>
             </div>
-
+            
+            <!-- Create another part of our wrapper, which tells the user about the copyright. -->
             <div class="copyright">
                 <p>
                     © 2026, Joshua Tuibuen <br>

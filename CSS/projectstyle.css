@@ -1,14 +1,26 @@
 @charset "UTF-8";
 
+/* Look for everything within the body tag. */
 body{
-    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0); /* This is used mainly for the background coloring, behind the main section of the page. */
+    font-family: Tahoma, Geneva, Verdana, sans-serif; /* Use a font family to support different browser fonts, in case one of them isn't.*/
 }
 
+/* Look for all images within the page. */
 img{
-    object-fit: contain;
+    object-fit: contain; /* This particular declaration allows images to be contained within its borders, unstretched. */
 }
 
+/*  Styles for the Project Page
+
+    This stylesheet only contains the unique elements from the project page. Any elements like the heading banner, nav bar,
+    and footer will be contained in 'homestyle.css', which removes any redundancy.
+
+    All selections are placed in the style sheet in it's respective vertical order. E.g., if the footer was at the bottom
+    of the page, it will be at the bottom of this stylesheet. 
+*/
+
+/* STYLES FOR THE PROJECTS OF THE PROJECT PAGE */
 #page-wrapper .project-img-box img{
     width:240px;
     height:170px;
@@ -43,47 +55,4 @@ img{
 
     color: #E0E0E0
 }
-
-#footer-wrapper footer{
-    width:  960px; 
-    height: 60px;
-
-    margin-top: 5px;
-    margin: auto;
-
-    background: #E0E0E0;
-    border: 1px solid #E0E0E0
-}
-
-#footer-wrapper h2{
-    margin-left: 5px;
-}
-
-#footer-wrapper .copyright{
-    font-size: 20px;
-    position:absolute;
-
-    margin-left: 10px;
-    margin-top: -15px;
-    float:left;
-}
-
-#footer-wrapper .copyright h6 p{
-    color:#2E3E50
-}
-
-#footer-wrapper .footer-nav{
-    position:relative;
-    float:right;
-    margin-right: 15px;
-    margin-top: -10px;
-    font-size: 20px;
-}
-
-#footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
-    color: #2E3E50
-}
-
-.clear{
-    clear:both
-}
+/* END OF PROJECT STYLING */

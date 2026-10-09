@@ -7,6 +7,10 @@
 
     <!-- Computers or any device >= 960px in viewport width 
          The maximum width is either 960px or above
+
+         Two stylesheets are using the same query, because I want to remove redundancy between
+         pages. Instead of declaring common elements in both sheets, keep it in one, and call it 
+         along with the page that contains the styling for unique elements.
     -->
     <link rel="stylesheet" 
           type="text/css" 
@@ -33,110 +37,138 @@
           type="text/css" 
           href="./CSS/smartphone.css"
           media="only screen and (max-width:479px)"> 
-     
+    
+    <!--This creates the browser title for the tab.-->
     <title>INFR3120 Portfolio Page - CONTACT</title>
 </head>
 
-<body>  
+<body>
   <!-- 
         Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
         This is to group information together into their corresponding, related area.
     -->
-  <div id="page-wrapper">
-    <div id="banner-wrapper">
-      <div class="header-text">
+  <div id="page-wrapper">       <!-- Everything (except the footer) is within a div, for centering purposes. -->
+    <div id="banner-wrapper">   <!--This is a div for the banner at the top of the portfolio.-->
+      <div class="header-text"> <!--This is a div for the header text within the banner-wrapper div-->
         <header>
           <h1>Joshua — Networking and IT Security Student</h1>
           <p>Nice to Meet You!</p>
         </header>
       </div>
-      <div class="clear"></div>
+      <div class="clear"></div>  <!--Page flow needs to be cleared, as I do not want the subsequent elements to inherit a float.-->
 
-      <div class="header-image">
+      <div class="header-image"> <!-- This creates a div, for the banner, which is for an image beside the header-text div. -->
           <img src="./Images/jt_transparent2.png" 
                alt="An image of the author in a white shirt.">
       </div>
 
-      <!--TODO: Float this navbar left, across from the title header of this page.-->
+      <!--Keep a section of the page, reserved for navigation.-->
       <div class="clear"></div>
       <div class="nav-section">
         <!--Create a navigation bar with all navigation options-->
         <nav>
+          <!-- Contact Page Link -->
           <div class="box">
             <a href="contactpage.html">Contact</a>
           </div>
-
+          
+          <!-- About Page Link -->
           <div class="box">
             <a href="aboutpage.html">About</a>
           </div>
 
+          <!-- Project Page Link -->
           <div class="box">
             <a href="projectpage.html">Projects</a>
           </div>
 
+          <!-- Home Page Link -->
           <div class="box">
             <a href="index.html">Home</a>
           </div>
 
-          <div class="box-filler">
-            <img src="./Images/contact_icon.png"
-                 alt="An image of a phone, with a bell icon showing two exclamation marks">
-          </div>
           <div class="clear"></div>
-
         </nav>
       </div>
 
+      <!-- This is essentially a "filler" div beside the navigation bar. It serves no other purpose
+            than to use an image indicating where you are on the page.-->
+      <div id="box-filler">
+        <img src="./Images/contact_icon.png"
+             alt="An image of a phone, with a bell icon showing two exclamation marks">
+      </div>
+
+      <!-- Another "filler" div, but under the navigation bar. It tells the user, in text, where you are on the page.-->
       <div id="page-indicator-box">
-          <header>
+          <header> 
               <h2>
                   Portfolio — Contact Page
               </h2>
           </header>
       </div>
-
     </div> <!-- END OF BANNER WRAPPER-->
-
     <div class="clear"></div>
+
+    <!-- This encapsulates the entire main part of the body section (the form) of the page-->
     <div id="form-wrapper">
 
+      <!-- Use header semantic tag to tell the visitor what the purpose of the page is-->
       <header>
         <h1>Any Inquiries or Feedback?</h1>
         <p>Your comments are greatly appreciated!</p>
       </header>
 
+      <!-- Contain the form, all within a singular area, it's text fields, input, submit, etc..-->
       <div id="form-container">
+
+        <!-- Main purpose of the form to be able to mail it to my email.-->
         <form action="mailto:joshua.tuibuen@ontariotechu.net" method="post" enctype="text/plain" name="form">
+
+          <!-- Another subdivision, which outlines a form field that the user needs to enter.
+               This is Form Field #1: First Name-->
           <div class="form-field">
             <p>
+              <!-- Create and add a label, in this case the First Name. -->
               <label for="Fname">First Name: </label>
+              <!-- As text input, require the user to enter their first name.-->
               <input type="text" name="Fname" id="Fname" style="width: 75%" required placeholder="Enter your First Name">
             </p>
           </div>
-        
+          
+          <!-- Form Field #2: Last Name-->
           <div class="form-field">
             <p>
+              <!-- Create and add a label, in this case the Last Name. -->
               <label for="Lname">Last Name: </label>
+              <!-- As text input, require the user to enter their last name.-->
               <input type="text" name="Lname" id="Lname" style="width: 75%" required placeholder="Enter your Last Name">
             </p>
           </div>
-      
+          
+          <!-- Form Field #3: Email-->
           <div class="form-field"> 
             <p>
+              <!-- Create and add a label, in this case the email -->
               <label for="email">Email: </label>
+              <!-- As email input, require the user to enter their email, nothing else.-->
               <input type="email" name="email" id="email" style="width: 75%" required placeholder="Enter your Email Address">
             </p>
           </div>
-      
+          
+          <!-- Form Field #4: Comments-->
           <div class="form-field"> 
             <p>
+              <!-- Create and add a label, in this case the comments the visitor has.-->
               <label for="Comments">Comments: </label>
-              <br>
+              <br> <!-- A break tag is used here to separate the label and textarea further.-->
+              <!-- As comment input, require the user to enter their any comments they have-->
               <textarea name="Comments" id="Comments" cols="70" rows="10" required placeholder="Questions, feedback, comments..."></textarea>
             </p>
           </div>
 
+          <!-- Finally, create a section for the submission of forms.-->
           <div id="submit-button">
+            <!-- Get the user to submit through this button using the submit input type.-->
             <input type="submit" value="Submit the Form!">
           </div>
         </form>
@@ -144,11 +176,12 @@
 
     </div>
   </div>
-
   <div class="clear"></div>
+
+  <!-- Create a separate section for the footer-->
   <div id="footer-wrapper">
-    <footer>
-      <div class="footer-nav">
+    <footer> <!-- Structure the footer using the semantic tag for footers -->
+      <div class="footer-nav"> <!-- A sub-div of the wrapper, reserved for more navigation accessibility on the page.-->
         <nav>
             <a href="index.html">Home</a>
             <a href="projectpage.html">Projects</a>
@@ -157,6 +190,7 @@
         </nav>
       </div>
 
+      <!-- Create another part of our wrapper, which tells the user about the copyright. -->
       <div class="copyright">
         <p>
             © 2026, Joshua Tuibuen <br>

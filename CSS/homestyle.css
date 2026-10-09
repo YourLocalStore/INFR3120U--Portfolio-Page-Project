@@ -1,25 +1,44 @@
 @charset "UTF-8";
 
+/* Look for everything within the body tag. */
 body{
-    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #2E3E50, #E0E0E0); /* This is used mainly for the background coloring, behind the main section of the page. */
+    font-family: Tahoma, Geneva, Verdana, sans-serif; /* Use a font family to support different browser fonts, in case one of them isn't.*/
 }
 
+/* Look for all images within the page. */
 img{
-    object-fit: contain;
+     object-fit: contain; /* This particular declaration allows images to be contained within its borders, unstretched. */
 }
 
-/* Styles for the Home Page Banner Section*/
+/*  Styles for the Home Page
+
+    These particular styles also account for both the top banner (My name, image, navigation bar) and the footer,
+    which will be used constantly throughout each page. Otherwise, unique elements for each page are kept in their own
+    stylesheets.
+
+    All selections are placed in the style sheet in it's respective vertical order. E.g., if the footer was at the bottom
+    of the page, it will be at the bottom of this stylesheet. 
+    
+    Much of the documentation in this stylesheet will more so look into positions, pseudo-classes and other 
+    uncommon declarations (e.g., text-align, min-height, clear). Since widths, heights, margins, etc.. can be arbitrarily
+    chosen to fit in where I need the elements to be.
+*/
+
+/* This is styling for the main part of the entire main part of the page as a singular wrapper. 
+   This page wrapper is what keeps all contained information.
+*/
 #page-wrapper{
-    width:  960px;
-    min-height: 1024px;
+    width:  960px;       /* All info kept within 960px width and at least fit the 960px grid style.*/
+    min-height: 1024px;  /* Where each device will have to scroll through at least 1024px (in height) for the entire page */
 
-    margin: auto;
+    margin: auto;        /* I want to center the page, so let the browser calculate the margins */
 
-    background-color: #2E3E50;
-    border: 1px solid #E0E0E0;
+    background-color: #2E3E50; /* Set a generic color, despite having a linear gradient */
+    border: 1px solid #E0E0E0; /* A slight border, in order to make it stand out from the page */
 }
 
+/* STYLES FOR THE BANNER (TOP OF PAGE), INCLUDING NAVIGATION */
 #banner-wrapper{
     width:  960px;
     height: 120px;
@@ -50,10 +69,11 @@ img{
 }
 
 #banner-wrapper .header-image img{
+    /* Allow overlap with other elements (i.e., the navigation div.) */
+    position: absolute;
     width:  105px;
     height: 100px;
     float: left;
-    position: absolute; /* Allow overlap with other elements (i.e., the navigation div.) */
 
     margin-top: -110px;
     margin-left: 20px;
@@ -61,10 +81,11 @@ img{
     background-color: #2E3E50;
     
     border-radius: 45%;
-    background-image: linear-gradient(90deg, #2E3E50 50%, #E0E0E0 50%);
+    background-image: linear-gradient(90deg, #2E3E50 50%, #E0E0E0 50%); /* Create an angled, linear gradient which is flipped about 90 degrees. */
 }
 
 #page-wrapper .nav-section .box{
+    /* Center the text within each box of the navigation bar. */
     text-align: center;
 
     width:  155px;
@@ -82,24 +103,31 @@ img{
 
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
-
+    
+    /* This will be used in order to transform the box when it hovers. 
+       In this case, it will take 0.35s to ease both in and out.
+    */
     transition: 0.35s ease;
     font-size:  24px;
 }
 
-#page-wrapper .nav-section .box a:link{
+/* This is the transformation used. We use a :hover state pseudoclass
+   to change the background color of the box class div.
+*/
+#page-wrapper .nav-section .box:hover{
+    background-color: #2E3E50;
+}
+
+/* A link state of the navigation link. It changes the color of when it's in its normal or visited state.*/
+#page-wrapper .nav-section .box a:link, #page-wrapper .nav-section .box a:visited{
     color:#E0E0E0
 }
 
-#page-wrapper .nav-section .box a:visited{
-    color:#E0E0E0
-}
-
-#page-wrapper .box-filler{
+#page-wrapper #box-filler{
     width:   55px;
     height:  75px;
     
-    margin-top:  10px;
+    margin-top:  -32px;
     margin-left:  5px;
 
     padding-left:   20px;
@@ -112,7 +140,8 @@ img{
     border: 1px solid #E0E0E0;
 }
 
-#page-wrapper .box-filler img{
+#page-wrapper #box-filler img{
+    /* Again, I just want to stick the image where it is, over the box. */
     position:absolute;
 
     width: 90px;
@@ -124,7 +153,7 @@ img{
     width:853px;
     height:48px;
 
-    margin-top: -50px;
+    margin-top: 9px;
     margin-right: 5px;
     background-color: #D94A64;
     border: 1px solid #E0E0E0;
@@ -137,13 +166,10 @@ img{
     margin-left: 20px;
     color:#E0E0E0
 }
+/* END OF BANNER/NAVIGATION DIV STYLING */
 
-/* ONLY FOR COMPUTERS */
-#page-wrapper .nav-section .box:hover{
-    background-color: #2E3E50;
-}
 
-/* Styles for the Home Page Body Section*/
+/* STYLES FOR THE BODY SECTION OF THE HOME PAGE */
 #body-wrapper header{
     text-align: center;
 
@@ -161,6 +187,7 @@ img{
     height: 200px;
     margin-top:10px;
 
+     /* Another linear gradient, this time used for the banner that welcomes the visitor. */
     background-image: linear-gradient(to right, #2E3E50, transparent);
     background-color:#E0E0E0;
     border: 2px solid #E0E0E0;
@@ -187,8 +214,8 @@ img{
 #body-wrapper #jt-banner-line1 h1{
     text-align: left;
 
-    width:960px;
-    height:40px;
+    width: 960px;
+    height: 40px;
 
     margin-top: 40px;
     margin-left: 10px;
@@ -255,7 +282,10 @@ img{
     border: 1px solid #E0E0E0;
     float:right;
 }
+/* END OF BODY WRAPPER DIV STYLING */
 
+
+/* STYLES FOR THE FOOTER SECTION OF THE HOME PAGE */
 #footer-wrapper footer{
     width:  960px; 
     height: 60px;
@@ -301,7 +331,9 @@ img{
 #footer-wrapper .footer-nav a:link, #footer-wrapper .footer-nav a:visited{
     color: #2E3E50
 }
+/* END OF FOOTER WRAPPER DIV STYLING */
 
+/* This is a class mainly for clearing the inherited floats that might come after some element on the page. */
 .clear{
-    clear:both
+    clear:both /* Clear the left and right floats of the page. */
 }

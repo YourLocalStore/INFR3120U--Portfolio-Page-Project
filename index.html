@@ -28,7 +28,8 @@
           type="text/css" 
           href="./CSS/smartphone.css"
           media="only screen and (max-width:479px)"> 
-     
+    
+    <!--This creates the browser title for the tab.-->
     <title>INFR3120 Portfolio Page - HOME</title>
 </head>
 
@@ -37,49 +38,57 @@
         Each significant section (banner, body, footer, or the page itself) are divided into separate parts as a wrapper.
         This is to group information together into their corresponding, related area.
     -->
-    <div id="page-wrapper">
-        <div id="banner-wrapper">
-            <div class="header-text">
+    <div id="page-wrapper">           <!-- Everything (except the footer) is within a div, for centering purposes. -->
+        <div id="banner-wrapper">     <!--This is a div for the banner at the top of the portfolio.-->
+            <div class="header-text"> <!--This is a div for the header text within the banner-wrapper div-->
                 <header>
                     <h1>Joshua — Networking and IT Security Student</h1>
                     <p>Nice to Meet You!</p>
                 </header>
             </div>
-            <div class="clear"></div>
+            <div class="clear"></div>  <!--Page flow needs to be cleared, as I do not want the subsequent elements to inherit a float.-->
             
-            <div class="header-image">
+            <div class="header-image"> <!-- This creates a div, for the banner, which is for an image beside the header-text div. -->
                 <img src="./Images/jt_transparent2.png" 
                      alt="An image of the author in a white shirt.">
             </div>
 
+            <!--Keep a section of the page, reserved for navigation.-->
             <div class="nav-section">
                 <!--Create a navigation bar with all navigation options-->
                 <nav>
+                    <!-- Contact Page Link -->
                     <div class="box">
                         <a href="contactpage.html">Contact</a>
                     </div>
-
+                    
+                    <!-- About Page Link -->
                     <div class="box">
                         <a href="aboutpage.html">About</a>
                     </div>
 
+                    <!-- Project Page Link -->
                     <div class="box">
                         <a href="projectpage.html">Projects</a>
                     </div>
 
+                    <!-- Home Page Link -->
                     <div class="box">
                         <a href="index.html">Home</a>
-                    </div>
-
-                    <div class="box-filler">
-                        <img src="./Images/homepage_icon.png"
-                             alt="A drawn image of a house, with a yellow sun in the corner">
                     </div>
 
                     <div class="clear"></div>
                 </nav>
             </div> 
 
+            <!-- This is essentially a "filler" div beside the navigation bar. It serves no other purpose
+                 than to use an image indicating where you are on the page.-->
+            <div id="box-filler">
+                <img src="./Images/homepage_icon.png"
+                     alt="A drawn image of a house, with a yellow sun in the corner">
+            </div>
+
+            <!-- Another "filler" div, but under the navigation bar. It tells the user, in text, where you are on the page.-->
             <div id="page-indicator-box">
                 <header>
                     <h2>
@@ -88,42 +97,54 @@
                 </header>
             </div>
 
-        </div>     <!-- END OF BANNER WRAPPER-->
-
+        </div> <!-- END OF BANNER WRAPPER-->
         <div class="clear"></div>
+
+        <!--This wraps the entire body section (under the navigation section and above the footer) within a div.-->
         <div id="body-wrapper">
 
+            <!-- This specific div is for decoration, for another, separate banner under the navigation bar.-->
             <div id="jt-banner-line1">
                 <h1>Welcome to my Page!</h1>
             </div>
-
+            
+            <!-- Another div that is used for the banner above (jt-banner-line-1). It is further used for an image.-->
             <div id="homepage-image-jt">
                 <img src="./Images/jt_transparent.png" 
                      alt="An image of the author in a black sweater">
             </div>
 
+            <!-- This header is kept for emphasis and what the user is looking at when reading the homepage.
+                 In other words, it's just to section off the content.-->
             <header><h1>My Projects!</h1></header>
 
+            <!-- This is the first article, slightly talking about the projects I've made.-->
             <article>
+                <!-- Section #1: Projects-->
                 <section>
                     <h2>Wondering What I've Made?</h2>
                     <p>
                         Here are examples of the various projects/assignments I've worked on in past semesters.
                     </p>
                     
+                    <!-- A div tag is used here to separate content from the various images I will use to illustrate projects.-->
                     <div id="img-projects-wrapper">
-                        <figure>
+
+                        <!-- Figure #1: Student Management System -->
+                        <figure> 
                             <img src="./Images/python.png" 
                                  alt="An image of the Python (Programming Language) logo.">
                             <figcaption>Student Management System</figcaption>
                         </figure>
-
+                        
+                        <!-- Figure #2: Cisco Packet Tracer Networks -->
                         <figure>
                             <img src="./Images/cisco.png" 
                                  alt="An image of the Cisco logo.">
                             <figcaption>Designing and Implementing Networks</figcaption>
                         </figure>
-
+                        
+                        <!-- Figure #3: Iterative and Recursive Fibonacci in RISC-V -->
                         <figure>
                             <img src="./Images/riscv.png" 
                                  alt="An image of the RISC-V Foundation logo.">
@@ -132,17 +153,18 @@
 
                     </div>
                     <div class="clear"></div>
-
                 </section>
 
-                <h3>
-                    To learn more about my projects, <a href="projectpage.html"><mark>click here</mark></a>!
-                </h3>
+                <!-- In bold text, I want to let the user know where they need to go in order to look more into my projects. -->
+                <h3>To learn more about my projects, <a href="projectpage.html"><mark>click here</mark></a>!</h3>
             </article>
 
+            <!-- Again, emphasize another section of the page, this time it's for the About Me page.-->
             <header><h1>About Me!</h1></header>
 
+            <!-- This is the second article, telling the user to go to the About Me page.-->
             <article>
+                <!-- Section #2: About Me-->
                 <section>
                     <h2>Wondering More About Me?</h2>
                     <p>
@@ -150,32 +172,29 @@
                         and who I am.
                     </p>
                     
+                    <!-- Create a div, containing an image, floated to the right which shows me.-->
                     <div id="about-img-wrapper">
                         <img src="./Images/jt_robotics.png" 
                              alt="An image of the author in an interview, wearing a red sweater.">
                     </div>
-
                 </section>
                 
+                <!-- Emphasis as to where the user can go for the About Me page.-->
                 <h3>
                     To read more about me,  <a href="aboutpage.html"><mark>click here</mark></a>!
                 </h3>
             </article>
-
         </div> <!-- END OF BODY WRAPPER-->
 
-        <!-- We need to clear the floats in order for the footer to
-            align with the page correctly. 
-
-            Otherwise, it inherits the last float value.
-        -->
+        <!-- Floats need to be cleared in order to make way for the footer. -->
         <div class="clear"></div>
 
     </div> <!-- END OF HOMEPAGE WRAPPER-->
 
+    <!-- Create a separate section for the footer-->
     <div id="footer-wrapper">
-        <footer>
-            <div class="footer-nav">
+        <footer> <!-- Structure the footer using the semantic tag for footers -->
+            <div class="footer-nav"> <!-- A sub-div of the wrapper, reserved for more navigation accessibility on the page.-->
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="projectpage.html">Projects</a>
@@ -184,15 +203,15 @@
                 </nav>
             </div>
 
+            <!-- Create another part of our wrapper, which tells the user about the copyright. -->
             <div class="copyright">
                 <p>
                     © 2026, Joshua Tuibuen <br>
                     joshua.tuibuen@ontariotechu.net
                 </p>
             </div>
-
         </footer>
     </div>
-</body>
 
+</body>
 </html>

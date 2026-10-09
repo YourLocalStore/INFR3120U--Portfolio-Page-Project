@@ -11,7 +11,7 @@ As a quick note, this portfolio is also being deployed on [Github Pages](https:/
 
 **All** HTML formatting and CSS styling has been written by me, only with the help of course lectures and documentation.
 Furthermore, most of the images used in this portfolio are taken by me, while some are fairly used under [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page).
-###### * Citations can be found by clicking here
+###### * Citations can be found by [clicking here](#citations)
 
 # Viewport Choices
 At the very start of my HTML files, I put the necessary queries under the ```<head>``` tag. This is done so that my media queries will be loaded across all pages of my portfolio in order to implement fully responsive design.
@@ -111,4 +111,14 @@ An insight to the colors, and their purpose:
 
 ###### Displayed below is an example from the home page.
 ![Image](https://github.com/YourLocalStore/INFR3120U--Portfolio-Page-Project/blob/main/color-scheme-example.png)
+
+# Citations
+Cisco. (n.d.-a). File:cisco logo blue 2016.SVG. Wikimedia Commons. 
+https://commons.wikimedia.org/wiki/File:Cisco_logo_blue_2016.svg
+
+Clover, A. (n.d.). File:python windows source code icon 2006–2016.SVG. Wikimedia Commons. 
+https://commons.wikimedia.org/wiki/File:Python_Windows_source_code_icon_2006%E2%80%932016.svg 
+
+RISC-V Foundation. (n.d.). File:RISC-V-logo-square.svg. Wikimedia Commons. 
+https://commons.wikimedia.org/wiki/File:RISC-V-logo-square.svg 
 
